@@ -1,13 +1,13 @@
 export function Press() {
   const logos = [
-    { name: "NYT", src: "/images/press/nyt.png" },
-    { name: "WSJ", src: "/images/press/wsj.png" },
-    { name: "Forbes", src: "/images/press/forbes.png" },
-    { name: "Bloomberg", src: "/images/press/bloomberg.png" },
-    { name: "TechCrunch", src: "/images/press/techcrunch.png" },
-    { name: "HBR", src: "/images/press/hbr.png" },
-    { name: "WaPo", src: "/images/press/wapo.png" },
-    { name: "Entrepreneur", src: "/images/press/entrepreneur.png" },
+    { name: "NYT", src: "/images/press/nyt.png", isSvg: false },
+    { name: "WSJ", src: "/images/press/wsj.svg", isSvg: true },
+    { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
+    { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
+    { name: "TechCrunch", src: "/images/press/techcrunch.png", isSvg: false },
+    { name: "HBR", src: "/images/press/hbr.png", isSvg: false },
+    { name: "WaPo", src: "/images/press/wapo.png", isSvg: false },
+    { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false },
   ];
 
   const doubled = [...logos, ...logos];
@@ -20,13 +20,13 @@ export function Press() {
       <div className="relative w-full">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-navy-deep/80 to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-navy-deep/80 to-transparent z-10 pointer-events-none" />
-        <div className="flex animate-scroll-left gap-24 w-max py-4">
+        <div className="flex animate-scroll-left gap-24 w-max py-4 items-center">
           {doubled.map((logo, i) => (
             <img
               key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              className={`h-16 md:h-20 w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ${logo.isSvg ? "" : "brightness-0 invert"}`}
               data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
           ))}
