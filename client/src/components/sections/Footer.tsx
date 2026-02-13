@@ -1,17 +1,12 @@
 import { Link } from "wouter";
+import logoImg from "@assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-navy-deep border-t border-white/5 py-12">
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <Link href="/" className="group">
-          <svg viewBox="0 0 40 40" className="w-8 h-8 transition-transform group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="4" width="30" height="32" rx="3" fill="#C8D8E8" opacity=".9" />
-            <polygon points="0,36 30,36 30,20 22,28 16,22 6,32" fill="#4CAF50" />
-            <polygon points="0,36 30,36 30,26 20,32 12,26 0,34" fill="#388E3C" />
-            <polygon points="22,4 30,4 30,12" fill="#90A4AE" />
-            <circle cx="22" cy="12" r="3" fill="#64B5F6" />
-          </svg>
+          <img src={logoImg} alt="AutoUp" className="h-6 w-auto transition-transform group-hover:scale-105" />
         </Link>
         
         <div className="flex items-center gap-6">

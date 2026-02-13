@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "wouter";
+import logoImg from "@assets/logo.png";
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,15 +37,8 @@ export function Navigation() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="relative z-50 flex items-center gap-2 group">
-          <svg viewBox="0 0 40 40" className="w-10 h-10 transition-transform group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="4" width="30" height="32" rx="3" fill="#C8D8E8" opacity=".9" />
-            <polygon points="0,36 30,36 30,20 22,28 16,22 6,32" fill="#4CAF50" />
-            <polygon points="0,36 30,36 30,26 20,32 12,26 0,34" fill="#388E3C" />
-            <polygon points="22,4 30,4 30,12" fill="#90A4AE" />
-            <circle cx="22" cy="12" r="3" fill="#64B5F6" />
-          </svg>
-          <span className="font-extrabold text-2xl tracking-tighter text-white">AutoUp</span>
+        <Link href="/" className="relative z-50 flex items-center group">
+          <img src={logoImg} alt="AutoUp" className="h-8 w-auto transition-transform group-hover:scale-105" />
         </Link>
 
         {/* Desktop Nav */}
