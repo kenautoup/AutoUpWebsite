@@ -65,6 +65,28 @@ export default {
           foreground: "hsl(var(--sidebar-foreground) / <alpha-value>)",
           border: "hsl(var(--sidebar-border) / <alpha-value>)",
         },
+        navy: {
+          DEFAULT: '#0B1A2E',
+          deep: '#060F1E',
+          card: '#0D1B30',
+        },
+        teal: {
+          DEFAULT: '#00C9DB',
+          dark: '#00A8B8',
+          soft: 'rgba(0,201,219,0.08)',
+          glow: 'rgba(0,201,219,0.12)',
+        },
+        // Grays from the design
+        g50: '#F9FAFB',
+        g100: '#F3F4F6',
+        g200: '#E5E7EB',
+        g300: '#D1D5DB',
+        g400: '#9CA3AF',
+        g500: '#6B7280',
+        g600: '#4B5563',
+        g700: '#374151',
+        g800: '#1F2937',
+        g900: '#111827',
         "sidebar-primary": {
           DEFAULT: "hsl(var(--sidebar-primary) / <alpha-value>)",
           foreground: "hsl(var(--sidebar-primary-foreground) / <alpha-value>)",
