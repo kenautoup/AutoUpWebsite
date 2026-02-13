@@ -14,8 +14,8 @@ export function Hero() {
 
         <Reveal delay={0.1}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] font-sans text-gray-900">
-            Your B2B Outreach,<br />
-            <em className="text-teal italic">10x'd and Done For You</em>
+            We Build the Pipeline.<br />
+            <em className="text-teal italic">You Close the Deals.</em>
           </h1>
         </Reveal>
 
