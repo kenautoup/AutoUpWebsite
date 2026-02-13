@@ -18,6 +18,7 @@ export function Navigation() {
     { name: "How It Works", href: "#how-it-works" },
     { name: "Results", href: "#results" },
     { name: "Testimonials", href: "#testimonials" },
+    { name: "Blog", href: "/blog", external: true },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -48,8 +49,11 @@ export function Navigation() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  onClick={(e) => scrollToSection(e, link.href)}
+                  onClick={(e) => {
+                    if (!(link as any).external) scrollToSection(e, link.href);
+                  }}
                   className="text-sm font-sans font-medium text-gray-300 hover:text-white transition-colors"
+                  data-testid={`nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
                   {link.name}
                 </a>
@@ -86,8 +90,12 @@ export function Navigation() {
             <a
               key={link.name}
               href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
+              onClick={(e) => {
+                if (!(link as any).external) scrollToSection(e, link.href);
+                else setMobileOpen(false);
+              }}
               className="text-lg font-sans font-medium text-gray-300 hover:text-teal py-2 border-b border-white/5"
+              data-testid={`nav-link-mobile-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
             >
               {link.name}
             </a>
