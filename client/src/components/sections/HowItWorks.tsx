@@ -39,7 +39,7 @@ export function HowItWorks() {
             <div className="bg-teal/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               {item.icon}
             </div>
-            <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+            <h3 className="text-xl font-bold mb-3 font-sans not-italic">{item.title}</h3>
             <p className="text-gray-400 leading-relaxed">{item.desc}</p>
           </Reveal>
         ))}
