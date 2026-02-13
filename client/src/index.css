@@ -44,7 +44,7 @@
   }
 
   em {
-    @apply font-sans italic text-teal not-italic;
+    @apply font-serif italic text-teal not-italic;
   }
 }
 
