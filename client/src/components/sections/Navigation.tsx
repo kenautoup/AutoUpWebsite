@@ -49,7 +49,7 @@ export function Navigation() {
                 <a
                   href={link.href}
                   onClick={(e) => scrollToSection(e, link.href)}
-                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                  className="text-sm font-sans font-medium text-gray-300 hover:text-white transition-colors"
                 >
                   {link.name}
                 </a>
@@ -60,7 +60,7 @@ export function Navigation() {
             href="https://calendly.com/ken-autoup/autoup-introduction"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-teal hover:bg-teal-dark text-navy font-bold px-5 py-2.5 rounded-lg transition-all shadow-[0_4px_14px_rgba(0,201,219,0.3)] hover:shadow-[0_6px_20px_rgba(0,201,219,0.4)] hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-teal hover:bg-teal-dark text-navy font-sans font-bold px-5 py-2.5 rounded-lg transition-all shadow-[0_4px_14px_rgba(0,201,219,0.3)] hover:shadow-[0_6px_20px_rgba(0,201,219,0.4)] hover:-translate-y-0.5"
           >
             Book a Call <ArrowUpRight className="w-4 h-4" />
           </a>
@@ -87,7 +87,7 @@ export function Navigation() {
               key={link.name}
               href={link.href}
               onClick={(e) => scrollToSection(e, link.href)}
-              className="text-lg font-medium text-gray-300 hover:text-teal py-2 border-b border-white/5"
+              className="text-lg font-sans font-medium text-gray-300 hover:text-teal py-2 border-b border-white/5"
             >
               {link.name}
             </a>
@@ -96,7 +96,7 @@ export function Navigation() {
             href="https://calendly.com/ken-autoup/autoup-introduction"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 flex items-center justify-center gap-2 bg-teal text-navy font-bold px-5 py-3 rounded-lg w-full"
+            className="mt-2 flex items-center justify-center gap-2 bg-teal text-navy font-sans font-bold px-5 py-3 rounded-lg w-full"
           >
             Book a Call <ArrowUpRight className="w-4 h-4" />
           </a>
