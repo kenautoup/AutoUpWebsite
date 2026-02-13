@@ -77,8 +77,8 @@ export function Navigation() {
             className={cn(
               "inline-flex items-center gap-2 font-sans font-bold px-5 py-2.5 rounded-lg transition-all hover:-translate-y-0.5",
               scrolled
-                ? "bg-teal hover:bg-teal-dark text-navy shadow-[0_4px_14px_rgba(0,201,219,0.3)] hover:shadow-[0_6px_20px_rgba(0,201,219,0.4)]"
-                : "bg-teal hover:bg-teal-dark text-white shadow-[0_4px_14px_rgba(0,201,219,0.3)] hover:shadow-[0_6px_20px_rgba(0,201,219,0.4)]"
+                ? "bg-[#4580F7] hover:bg-[#3570E0] text-white shadow-[0_4px_14px_rgba(69,128,247,0.3)] hover:shadow-[0_6px_20px_rgba(69,128,247,0.4)]"
+                : "bg-[#4580F7] hover:bg-[#3570E0] text-white shadow-[0_4px_14px_rgba(69,128,247,0.3)] hover:shadow-[0_6px_20px_rgba(69,128,247,0.4)]"
             )}
           >
             Book a Call <ArrowUpRight className="w-4 h-4" />

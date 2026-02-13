@@ -31,7 +31,7 @@ export function Hero() {
               href="https://calendly.com/ken-autoup/autoup-introduction"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-teal hover:bg-teal-dark text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(0,201,219,0.3)] hover:shadow-[0_8px_30px_rgba(0,201,219,0.4)] hover:-translate-y-1"
+              className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#3570E0] text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(69,128,247,0.3)] hover:shadow-[0_8px_30px_rgba(69,128,247,0.4)] hover:-translate-y-1"
             >
               Book a Strategy Call <ArrowRight className="w-5 h-5" />
             </a>
