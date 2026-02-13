@@ -38,6 +38,29 @@ export function Hero() {
             <div className="text-sm text-gray-400 font-medium">
               Free 30-minute consultation · No commitment
             </div>
+            <a
+              href="#testimonials"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#testimonials')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="mt-6 inline-flex items-center gap-3 cursor-pointer group"
+              data-testid="link-trust-indicator"
+            >
+              <div className="flex -space-x-3">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <img
+                    key={i}
+                    src={`/images/avatars/avatar${i}.jpg`}
+                    alt=""
+                    className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                  />
+                ))}
+              </div>
+              <span className="text-gray-600 text-sm font-medium group-hover:text-gray-900 transition-colors">
+                Trusted by <span className="font-bold text-gray-900">1,000+</span> business owners
+              </span>
+            </a>
           </div>
         </Reveal>
 
