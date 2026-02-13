@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6 text-center">
         <Reveal>
           <a href="https://instantly.ai/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center mb-8">
-            <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-10 w-auto" data-testid="img-instantly-badge" />
+            <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-12 w-auto" data-testid="img-instantly-badge" />
           </a>
         </Reveal>
 
