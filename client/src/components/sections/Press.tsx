@@ -8,7 +8,7 @@ export function Press() {
     { name: "HBR", src: "/images/press/hbr.png", isSvg: false },
     { name: "WaPo", src: "/images/press/wapo.png", isSvg: false },
     { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false },
-    { name: "Inc5000", src: "/images/press/inc5000.svg", isSvg: true },
+    { name: "Inc5000", src: "/images/press/inc5000.png", isSvg: false },
   ];
 
   const doubled = [...logos, ...logos];
