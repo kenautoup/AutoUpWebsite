@@ -7,7 +7,7 @@ export function Hero() {
     <section className="pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden relative bg-white">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-3 bg-gray-100 border border-gray-200 px-4 py-2 rounded-full mb-8">
+          <div className="inline-flex items-center mb-8">
             <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-24 w-auto" data-testid="img-instantly-badge" />
           </div>
         </Reveal>
