@@ -10,18 +10,24 @@ export function Press() {
     { name: "Entrepreneur", src: "/images/press/entrepreneur.png" },
   ];
 
+  const doubled = [...logos, ...logos];
+
   return (
-    <section className="py-10 border-y border-white/5 bg-navy-deep/30">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
-          <span className="text-xs font-bold tracking-[2px] text-g400 uppercase mr-2">Client Press</span>
-          {logos.map((logo) => (
+    <section className="py-12 border-y border-white/5 bg-navy-deep/30 overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6 mb-4">
+        <p className="text-xs font-bold tracking-[2px] text-g400 uppercase text-center">Client Press</p>
+      </div>
+      <div className="relative w-full">
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-navy-deep/80 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-navy-deep/80 to-transparent z-10 pointer-events-none" />
+        <div className="flex animate-scroll-left gap-16 w-max">
+          {doubled.map((logo, i) => (
             <img
-              key={logo.name}
+              key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              className="h-6 md:h-7 w-auto object-contain brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300"
-              data-testid={`press-logo-${logo.name.toLowerCase()}`}
+              className="h-10 md:h-12 w-auto object-contain brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
           ))}
         </div>
