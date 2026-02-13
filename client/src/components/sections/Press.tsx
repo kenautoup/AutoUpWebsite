@@ -15,7 +15,7 @@ export function Press() {
   return (
     <section className="py-16 border-y border-white/5 bg-navy-deep/30 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 mb-4">
-        <p className="text-sm font-bold tracking-[2px] text-g400 uppercase text-center">Client Press</p>
+        <p className="text-base md:text-lg font-bold tracking-[3px] text-g400 uppercase text-center">Client Press</p>
       </div>
       <div className="relative w-full">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-navy-deep/80 to-transparent z-10 pointer-events-none" />
