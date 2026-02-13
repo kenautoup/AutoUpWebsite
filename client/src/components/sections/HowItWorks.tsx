@@ -21,18 +21,18 @@ export function HowItWorks() {
         {[
           {
             icon: <Microscope className="w-8 h-8 text-teal" />,
-            title: "AI Data Extraction",
-            desc: "We use AI and machine learning to identify and collect verified contacts across your entire TAM — including ICPs not found in traditional directories."
+            title: "Your Data, Not a List",
+            desc: "We don't buy from ZoomInfo or Apollo. We build custom databases with AI scrapers that find verified contacts your competitors can't access."
           },
           {
             icon: <PenTool className="w-8 h-8 text-teal" />,
-            title: "Expert Copywriting",
-            desc: "Our copywriters craft snappy, conversational sequences that sound human — not templated. Every email is engineered to book meetings."
+            title: "Copy That Sounds Human",
+            desc: "No templates, no merge tags. Every sequence is written by real strategists who've sent millions of emails and know what converts."
           },
           {
             icon: <Zap className="w-8 h-8 text-teal" />,
-            title: "Automated Sending",
-            desc: "Email and LinkedIn campaigns deployed and managed on your behalf — fully automated, continuously optimized, entirely on autopilot."
+            title: "Proprietary Infrastructure",
+            desc: "Warmed inboxes, scaled laterally, real-time monitoring — and only we have it."
           }
         ].map((item, i) => (
           <Reveal key={i} delay={i * 0.1} className="bg-navy-card border border-white/5 p-8 rounded-2xl hover:border-teal/30 hover:bg-navy-card/80 transition-all group">
