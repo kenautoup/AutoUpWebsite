@@ -67,10 +67,9 @@ export function Hero() {
         <Reveal delay={0.4}>
           <div className="mt-20 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-gray-200 pt-12">
             {[
-              { label: "Opps / Month", value: "40+" },
-              { label: "Meetings Booked", value: "F500" },
-              { label: "Replies / Week", value: "30–40" },
-              { label: "Client Exit", value: "1" },
+              { label: "Emails Sent / Month", value: "5M+" },
+              { label: "Positive Replies / Month", value: "10K+" },
+              { label: "Fortune 500 Meetings Booked", value: "250+" },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
                 <div className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">{stat.value}</div>
