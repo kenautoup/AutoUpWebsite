@@ -32,7 +32,7 @@ export function HowItWorks() {
           {
             icon: <Zap className="w-8 h-8 text-teal" />,
             title: "Proprietary Infrastructure",
-            desc: "Warmed inboxes, scaled laterally, real-time monitoring — and a proprietary sending method that bypasses the limitations every other agency is stuck with. It's why our emails land in primary when theirs hit spam."
+            desc: "Warmed inboxes, scaled laterally, real-time monitoring — built on a sending method no one else has."
           }
         ].map((item, i) => (
           <Reveal key={i} delay={i * 0.1} className="bg-navy-card border border-white/5 p-8 rounded-2xl hover:border-teal/30 hover:bg-navy-card/80 transition-all group">
