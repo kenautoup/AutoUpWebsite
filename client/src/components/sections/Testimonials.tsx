@@ -77,7 +77,7 @@ export function Testimonials() {
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Client Results</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Real People. <em className="text-teal font-serif italic">Real Results.</em>
+            Real People. <em className="text-teal italic">Real Results.</em>
           </h2>
           <p className="text-lg text-gray-400">
             Don't take our word for it — hear from the founders and leaders who've scaled with us.

@@ -8,7 +8,7 @@ export function EmailShowcase() {
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">#2 — Copy</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Every Email Written <em className="text-teal font-serif italic">Like It Came From You</em>
+            Every Email Written <em className="text-teal italic">Like It Came From You</em>
           </h2>
           <p className="text-lg text-gray-400">
             If it reads like a cold email, it gets ignored. We make it sound like a real person — because it is.

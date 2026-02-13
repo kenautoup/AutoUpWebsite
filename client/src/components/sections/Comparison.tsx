@@ -10,7 +10,7 @@ export function Comparison() {
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">#1 — Data</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Your TAM, Sourced & Verified.<br />
-            <em className="text-teal font-serif italic">Not Scraped & Prayed.</em>
+            <em className="text-teal italic">Not Scraped & Prayed.</em>
           </h2>
           <p className="text-lg text-gray-400">
             Most agencies buy a list and hit send. We build your contact database from scratch — verified, enriched, and uniquely yours.

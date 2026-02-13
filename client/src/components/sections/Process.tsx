@@ -8,7 +8,7 @@ export function Process() {
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">#3 — Process</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Agile, Collaborative, <em className="text-teal font-serif italic">Relentless</em>
+            Agile, Collaborative, <em className="text-teal italic">Relentless</em>
           </h2>
           <p className="text-lg text-gray-400">
             We don't just ask our clients to join weekly scrum calls — we require it. Your growth is a team sport.
