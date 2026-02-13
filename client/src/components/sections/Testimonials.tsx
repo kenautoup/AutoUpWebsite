@@ -72,6 +72,7 @@ const testimonials = [
     stars: 5,
     quote: "Just before we were acquired, we had to turn away clients. If AutoUp could bring that level of success in the incredibly competitive web-mobile dev industry, it can work for anyone.",
     initials: "KG",
+    photo: "/images/avatars/kemaedeguzman.png",
     name: "Kemae de Guzman",
     role: "Project Manager, SourcePad",
   },
