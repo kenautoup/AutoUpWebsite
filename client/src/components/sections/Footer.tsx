@@ -24,7 +24,7 @@ export function Footer() {
         </div>
         
         <div className="text-sm text-gray-600">
-          © 2025 AutoUp. All Rights Reserved.
+          © {new Date().getFullYear()} AutoUp. All Rights Reserved.
         </div>
       </div>
     </footer>
