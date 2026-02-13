@@ -58,7 +58,7 @@ export function Hero() {
                 ))}
               </div>
               <span className="text-gray-600 text-sm font-medium group-hover:text-gray-900 transition-colors">
-                Trusted by <span className="font-bold text-gray-900">1,000+</span> business owners
+                Trusted by <span className="font-bold text-gray-900">200+</span> companies
               </span>
             </a>
           </div>
