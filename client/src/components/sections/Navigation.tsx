@@ -3,6 +3,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "wouter";
 import logoImg from "@assets/logo.png";
+import logoBlackImg from "@assets/autoupblack.png";
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,12 +41,9 @@ export function Navigation() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="relative z-50 flex items-center group">
           <img
-            src={logoImg}
+            src={scrolled ? logoImg : logoBlackImg}
             alt="AutoUp"
-            className={cn(
-              "h-8 w-auto transition-all group-hover:scale-105",
-              !scrolled && "brightness-0"
-            )}
+            className="h-8 w-auto transition-all group-hover:scale-105"
           />
         </Link>
 
