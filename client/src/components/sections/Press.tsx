@@ -20,7 +20,7 @@ export function Press() {
               key={logo.name}
               src={logo.src}
               alt={logo.name}
-              className="h-6 md:h-7 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+              className="h-6 md:h-7 w-auto object-contain brightness-0 invert opacity-50 hover:opacity-90 transition-opacity duration-300"
               data-testid={`press-logo-${logo.name.toLowerCase()}`}
             />
           ))}
