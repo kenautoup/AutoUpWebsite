@@ -26,7 +26,7 @@ export function Press() {
               key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              className={`h-16 md:h-20 w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ${logo.isSvg ? "" : "brightness-0 invert"}`}
+              className={`h-20 md:h-28 w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ${logo.isSvg ? "" : "brightness-0 invert"}`}
               data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
           ))}
