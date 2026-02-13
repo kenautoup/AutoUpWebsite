@@ -8,7 +8,7 @@ export function Press() {
     { name: "HBR", src: "/images/press/hbr.png", isSvg: false },
     { name: "WaPo", src: "/images/press/wapo.png", isSvg: false },
     { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false },
-    { name: "Inc5000", src: "/images/press/inc5000.png", isSvg: false },
+    { name: "Inc5000", src: "/images/press/inc5000.png", isSvg: false, blendMode: true },
   ];
 
   const doubled = [...logos, ...logos];
@@ -27,7 +27,7 @@ export function Press() {
               key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              className={`${(logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ${logo.isSvg ? "" : "brightness-0 invert"}`}
+              className={`${(logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ${(logo as any).blendMode ? "grayscale invert mix-blend-screen" : logo.isSvg ? "" : "brightness-0 invert"}`}
               data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
           ))}
