@@ -39,7 +39,14 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="relative z-50 flex items-center group">
-          <img src={logoImg} alt="AutoUp" className="h-8 w-auto transition-transform group-hover:scale-105" />
+          <img
+            src={logoImg}
+            alt="AutoUp"
+            className={cn(
+              "h-8 w-auto transition-all group-hover:scale-105",
+              !scrolled && "brightness-0"
+            )}
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -52,7 +59,12 @@ export function Navigation() {
                   onClick={(e) => {
                     if (!(link as any).external) scrollToSection(e, link.href);
                   }}
-                  className="text-sm font-sans font-medium text-gray-300 hover:text-white transition-colors"
+                  className={cn(
+                    "text-sm font-sans font-medium transition-colors",
+                    scrolled
+                      ? "text-gray-300 hover:text-white"
+                      : "text-gray-600 hover:text-gray-900"
+                  )}
                   data-testid={`nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
                   {link.name}
@@ -64,7 +76,12 @@ export function Navigation() {
             href="https://calendly.com/ken-autoup/autoup-introduction"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-teal hover:bg-teal-dark text-navy font-sans font-bold px-5 py-2.5 rounded-lg transition-all shadow-[0_4px_14px_rgba(0,201,219,0.3)] hover:shadow-[0_6px_20px_rgba(0,201,219,0.4)] hover:-translate-y-0.5"
+            className={cn(
+              "inline-flex items-center gap-2 font-sans font-bold px-5 py-2.5 rounded-lg transition-all hover:-translate-y-0.5",
+              scrolled
+                ? "bg-teal hover:bg-teal-dark text-navy shadow-[0_4px_14px_rgba(0,201,219,0.3)] hover:shadow-[0_6px_20px_rgba(0,201,219,0.4)]"
+                : "bg-navy hover:bg-navy-deep text-white shadow-[0_4px_14px_rgba(11,26,46,0.3)] hover:shadow-[0_6px_20px_rgba(11,26,46,0.4)]"
+            )}
           >
             Book a Call <ArrowUpRight className="w-4 h-4" />
           </a>
@@ -72,7 +89,10 @@ export function Navigation() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden relative z-50 text-white p-2"
+          className={cn(
+            "md:hidden relative z-50 p-2",
+            scrolled ? "text-white" : "text-gray-900"
+          )}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
