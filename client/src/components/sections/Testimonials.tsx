@@ -60,6 +60,7 @@ const testimonials = [
     stars: 5,
     quote: "AutoUp allowed us to rethink our business development structure entirely. They amplified our outreach in a cost-effective way we didn't know was possible.",
     initials: "GG",
+    photo: "/images/avatars/grantgordon.png",
     name: "Grant Gordon",
     role: "CEO, Connected Healthcare",
   },
