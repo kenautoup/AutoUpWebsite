@@ -7,9 +7,9 @@ export function Hero() {
     <section className="pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden relative bg-white">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <Reveal>
-          <div className="inline-flex items-center mb-8">
+          <a href="https://instantly.ai/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center mb-8">
             <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-24 w-auto" data-testid="img-instantly-badge" />
-          </div>
+          </a>
         </Reveal>
 
         <Reveal delay={0.1}>
