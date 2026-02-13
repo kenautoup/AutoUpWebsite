@@ -11,7 +11,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6 text-center">
         <Reveal>
           <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
-            <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-8 w-auto" data-testid="img-instantly-badge" />
+            <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-24 w-auto" data-testid="img-instantly-badge" />
           </div>
         </Reveal>
 
