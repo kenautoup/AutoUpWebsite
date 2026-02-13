@@ -35,12 +35,11 @@ export function Process() {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {[
-          { val: "40+", label: "Opportunities / month" },
-          { val: "F500", label: "Decision-maker meetings" },
-          { val: "30–40", label: "Positive replies / week" },
-          { val: "ROI", label: "Positive in month one" },
+          { val: "5M+", label: "Emails Sent / Month" },
+          { val: "10K+", label: "Positive Replies / Month" },
+          { val: "250+", label: "Fortune 500 Meetings Booked" },
         ].map((stat, i) => (
           <Reveal key={i} delay={0.2 + (i * 0.1)} className="bg-navy-card/50 p-6 md:p-8 rounded-2xl border border-white/5 text-center">
             <div className="text-3xl md:text-5xl font-bold text-white mb-2">{stat.val}</div>
