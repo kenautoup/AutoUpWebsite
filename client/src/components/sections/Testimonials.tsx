@@ -8,6 +8,7 @@ const testimonials = [
     stars: 5,
     quote: "With 40+ opportunities per month, it would have taken an entire sales team to drive the results AutoUp has. I'm formerly Google, Bolt and Gett — AutoUp is the most valuable weapon in our outreach.",
     initials: "RP",
+    photo: "/images/avatars/pleeth.png",
     name: "Rich Pleeth",
     role: "Co-founder & CEO, fin",
   },
@@ -182,9 +183,13 @@ export function Testimonials() {
             </div>
 
             <div className="flex items-center gap-4 mt-auto">
-              <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center font-bold text-teal text-lg flex-shrink-0">
-                {t.initials}
-              </div>
+              {t.photo ? (
+                <img src={t.photo} alt={t.name} className="w-16 h-16 rounded-full object-cover flex-shrink-0" />
+              ) : (
+                <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center font-bold text-teal text-lg flex-shrink-0">
+                  {t.initials}
+                </div>
+              )}
               <div>
                 <div className="font-bold text-white font-sans">{t.name}</div>
                 <div className="text-xs text-gray-400">{t.role}</div>
