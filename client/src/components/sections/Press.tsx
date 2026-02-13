@@ -1,7 +1,7 @@
 export function Press() {
   const logos = [
     { name: "NYT", src: "/images/press/nyt.png", isSvg: false },
-    { name: "WSJ", src: "/images/press/wsj.png", isSvg: false },
+    { name: "WSJ", src: "/images/press/wsj.png", isSvg: true },
     { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
     { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
     { name: "TechCrunch", src: "/images/press/techcrunch.png", isSvg: false },
