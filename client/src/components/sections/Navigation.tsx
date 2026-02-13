@@ -19,7 +19,7 @@ export function Navigation() {
     { name: "How It Works", href: "#how-it-works" },
     { name: "Results", href: "#results" },
     { name: "Testimonials", href: "#testimonials" },
-    { name: "Blog", href: "/blog", external: true },
+    { name: "Blog", href: "/blog", external: false },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -55,7 +55,7 @@ export function Navigation() {
                 <a
                   href={link.href}
                   onClick={(e) => {
-                    if (!(link as any).external) scrollToSection(e, link.href);
+                    if (link.href.startsWith('#')) scrollToSection(e, link.href);
                   }}
                   className={cn(
                     "text-sm font-sans font-medium transition-colors",
@@ -109,7 +109,7 @@ export function Navigation() {
               key={link.name}
               href={link.href}
               onClick={(e) => {
-                if (!(link as any).external) scrollToSection(e, link.href);
+                if (link.href.startsWith('#')) scrollToSection(e, link.href);
                 else setMobileOpen(false);
               }}
               className="text-lg font-sans font-medium text-gray-300 hover:text-teal py-2 border-b border-white/5"
