@@ -1,5 +1,6 @@
-import { ArrowRight, Check, Zap } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
+import instantlyLogo from "@assets/instantlyexpert_1770991537677.png";
 
 export function Hero() {
   return (
@@ -9,11 +10,8 @@ export function Hero() {
 
       <div className="container mx-auto px-4 md:px-6 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
-            <span className="text-amber-400 font-bold flex items-center gap-1">
-              <Zap className="w-4 h-4 fill-amber-400" /> Instantly.ai
-            </span>
-            <span className="text-gray-400 text-sm">Certified Partner</span>
+          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
+            <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-8 w-auto" data-testid="img-instantly-badge" />
           </div>
         </Reveal>
 
