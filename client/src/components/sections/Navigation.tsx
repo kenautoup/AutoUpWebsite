@@ -97,7 +97,7 @@ export function Navigation() {
             href="https://calendly.com/ken-autoup/autoup-introduction"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-sans font-bold px-5 py-2.5 rounded-lg transition-all hover:-translate-y-0.5 bg-[#4580F7] hover:bg-[#3570E0] text-white shadow-[0_4px_14px_rgba(69,128,247,0.3)] hover:shadow-[0_6px_20px_rgba(69,128,247,0.4)]"
+            className="inline-flex items-center gap-2 font-sans font-bold px-5 py-2.5 rounded-lg transition-all duration-200 ease-out bg-[#4580F7] hover:bg-[#5090FF] text-white shadow-[0_2px_10px_rgba(69,128,247,0.2)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
             data-testid="link-nav-cta"
           >
             Book a Call <ArrowUpRight className="w-4 h-4" />

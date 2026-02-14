@@ -139,7 +139,7 @@ export default function BlogPost() {
                 href="https://calendly.com/ken-autoup/autoup-introduction"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#4580F7] hover:bg-[#3570E0] text-white font-bold px-6 py-3 rounded-lg transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-[#4580F7] hover:bg-[#5090FF] text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 ease-out shadow-[0_2px_10px_rgba(69,128,247,0.2)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
                 data-testid="link-post-cta"
               >
                 Book a Strategy Call <ArrowRight className="w-4 h-4" />
