@@ -21,7 +21,7 @@ export function Hero() {
 
         <Reveal delay={0.2}>
           <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-2xl mx-auto mb-10 leading-relaxed">
-            AI-powered data extraction, expert copywriting, and automated outbound campaigns — personalized at scale, managed end-to-end.
+            AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure — engineered into one outbound system that fills your pipeline on autopilot.
           </p>
         </Reveal>
 
@@ -31,7 +31,7 @@ export function Hero() {
               href="https://calendly.com/ken-autoup/autoup-introduction"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#3570E0] text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(69,128,247,0.3)] hover:shadow-[0_8px_30px_rgba(69,128,247,0.4)] hover:-translate-y-1"
+              className="inline-flex items-center gap-3 bg-teal hover:bg-teal-dark text-navy font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(0,201,219,0.3)] hover:shadow-[0_8px_30px_rgba(0,201,219,0.4)] hover:-translate-y-1"
               data-testid="link-hero-cta"
             >
               Book a Call <ArrowUpRight className="w-5 h-5" />
@@ -59,7 +59,7 @@ export function Hero() {
                 ))}
               </div>
               <span className="text-[#64748b] text-sm font-medium group-hover:text-[#1e293b] transition-colors">
-                Trusted by <span className="font-bold text-[#1e293b]">200+</span> companies
+                <span className="font-bold text-[#1e293b]">200+</span> companies on the system
               </span>
             </a>
           </div>
