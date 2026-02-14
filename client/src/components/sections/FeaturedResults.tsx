@@ -16,6 +16,7 @@ function CaseStudyCard({
   authorTitle,
   testId,
   logo,
+  logoHeight = "h-9",
 }: {
   metric: string;
   metricLabel: string;
@@ -27,6 +28,7 @@ function CaseStudyCard({
   authorTitle: string;
   testId: string;
   logo?: string;
+  logoHeight?: string;
 }) {
   return (
     <div
@@ -40,7 +42,7 @@ function CaseStudyCard({
         <div className="text-left">
           {logo ? (
             <div>
-              <img src={logo} alt={company} className="h-9 w-auto max-w-[140px] object-contain mb-1" />
+              <img src={logo} alt={company} className={`${logoHeight} w-auto max-w-[160px] object-contain mb-1`} />
               <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
             </div>
           ) : (
@@ -141,6 +143,7 @@ export function FeaturedResults() {
               authorTitle="VP of Growth, Diverse"
               testId="card-case-diverse"
               logo={diverseLogoWhite}
+              logoHeight="h-[42px]"
             />
           </Reveal>
 
