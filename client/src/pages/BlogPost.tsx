@@ -110,17 +110,6 @@ export default function BlogPost() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="aspect-[16/9] overflow-hidden rounded-lg mb-12">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-full object-cover"
-                data-testid="img-post-hero"
-              />
-            </div>
-          </Reveal>
-
           <Reveal delay={0.2}>
             <div className="prose prose-lg max-w-none">
               {content.map((paragraph, i) => (
