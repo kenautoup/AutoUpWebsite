@@ -2,6 +2,8 @@ import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ArrowRight, Star } from "lucide-react";
 import instantlyLogo from "@assets/instantly_1771035044332.png";
+import diverseLogoWhite from "@assets/diverse-logo-white_1771041955595.png";
+import reggoraLogoWhite from "@assets/reggora-logo-white_1771041955595.png";
 
 function CaseStudyCard({
   metric,
@@ -13,7 +15,7 @@ function CaseStudyCard({
   authorName,
   authorTitle,
   testId,
-  logoIcon,
+  logo,
 }: {
   metric: string;
   metricLabel: string;
@@ -24,7 +26,7 @@ function CaseStudyCard({
   authorName: string;
   authorTitle: string;
   testId: string;
-  logoIcon?: React.ReactNode;
+  logo?: string;
 }) {
   return (
     <div
@@ -36,10 +38,8 @@ function CaseStudyCard({
     >
       <div className="w-full flex items-start justify-between mb-6">
         <div className="flex items-center gap-3 text-left">
-          {logoIcon && (
-            <div className="flex-shrink-0">
-              {logoIcon}
-            </div>
+          {logo && (
+            <img src={logo} alt={company} className="h-8 w-auto flex-shrink-0" />
           )}
           <div>
             <div className="font-bold text-white text-[20px] font-sans">{company}</div>
@@ -136,14 +136,7 @@ export function FeaturedResults() {
               authorName="Client Partner"
               authorTitle="VP of Growth, Diverse"
               testId="card-case-diverse"
-              logoIcon={
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <polygon points="4,8 14,2 14,10 4,16" fill="white" opacity="0.6" />
-                  <polygon points="14,2 24,8 24,16 14,10" fill="white" opacity="0.85" />
-                  <polygon points="4,12 14,18 14,26 4,20" fill="white" opacity="0.85" />
-                  <polygon points="14,18 24,12 24,20 14,26" fill="white" opacity="0.6" />
-                </svg>
-              }
+              logo={diverseLogoWhite}
             />
           </Reveal>
 
@@ -158,14 +151,7 @@ export function FeaturedResults() {
               authorName="Client Partner"
               authorTitle="Head of Sales, Reggora"
               testId="card-case-reggora"
-              logoIcon={
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <circle cx="14" cy="14" r="13" stroke="white" strokeWidth="1.5" fill="none" />
-                  <rect x="8" y="10" width="3" height="10" rx="0.5" fill="white" />
-                  <rect x="12.5" y="7" width="3" height="13" rx="0.5" fill="white" />
-                  <rect x="17" y="10" width="3" height="10" rx="0.5" fill="white" />
-                </svg>
-              }
+              logo={reggoraLogoWhite}
             />
           </Reveal>
         </div>
