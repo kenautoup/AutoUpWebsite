@@ -34,11 +34,8 @@ export function Hero() {
               className="inline-flex items-center gap-3 bg-teal hover:bg-[#00dced] text-navy font-bold text-lg px-10 py-[18px] rounded-xl transition-all duration-200 ease-out shadow-[0_2px_12px_rgba(0,201,219,0.2)] hover:shadow-[0_6px_24px_rgba(14,211,207,0.35)]"
               data-testid="link-hero-cta"
             >
-              Book a Call <ArrowUpRight className="w-5 h-5" />
+              Book Intro Call <ArrowUpRight className="w-5 h-5" />
             </a>
-            <div className="text-sm text-[#8a9bb0] font-medium">
-              Free 30-minute consultation · No commitment
-            </div>
             <a
               href="#testimonials"
               onClick={(e) => {

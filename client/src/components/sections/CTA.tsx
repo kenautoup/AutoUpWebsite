@@ -21,7 +21,7 @@ export function CTA() {
             className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#5090FF] text-white font-bold text-xl px-10 py-5 rounded-xl transition-all duration-200 ease-out shadow-[0_2px_12px_rgba(69,128,247,0.2)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)] mb-6"
             data-testid="link-cta-schedule"
           >
-            Book a Call <ArrowUpRight className="w-6 h-6" />
+            Book Intro Call <ArrowUpRight className="w-6 h-6" />
           </a>
         </Reveal>
       </div>
