@@ -9,7 +9,7 @@ export function HowItWorks() {
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Why AutoUp</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            The Growth Engine Behind Your{' '}<em className="text-teal italic">B2B Pipeline</em>
+            The Growth Engine<br />Behind Your <em className="text-teal italic">B2B Pipeline</em>
           </h2>
           <p className="text-lg text-gray-400">
             We don't just run campaigns — we build the entire outbound machine from data to delivery.
