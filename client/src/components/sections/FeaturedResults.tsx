@@ -37,14 +37,18 @@ function CaseStudyCard({
       data-testid={testId}
     >
       <div className="w-full flex items-start justify-between mb-6">
-        <div className="flex items-center gap-3 text-left">
-          {logo && (
-            <img src={logo} alt={company} className="h-8 w-auto flex-shrink-0" />
+        <div className="text-left">
+          {logo ? (
+            <div>
+              <img src={logo} alt={company} className="h-10 w-auto mb-1" />
+              <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
+            </div>
+          ) : (
+            <div>
+              <div className="font-bold text-white text-[20px] font-sans">{company}</div>
+              <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
+            </div>
           )}
-          <div>
-            <div className="font-bold text-white text-[20px] font-sans">{company}</div>
-            <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
-          </div>
         </div>
         <div className="flex items-center gap-0.5 flex-shrink-0 mt-1">
           {[...Array(5)].map((_, i) => (
