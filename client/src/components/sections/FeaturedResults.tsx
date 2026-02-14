@@ -1,7 +1,73 @@
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import instantlyLogo from "@assets/instantly_1771035044332.png";
+
+function CaseStudyCard({
+  metric,
+  metricLabel,
+  timeframe,
+  company,
+  industry,
+  quote,
+  authorName,
+  authorTitle,
+  testId,
+}: {
+  metric: string;
+  metricLabel: string;
+  timeframe: string;
+  company: string;
+  industry: string;
+  quote: string;
+  authorName: string;
+  authorTitle: string;
+  testId: string;
+}) {
+  return (
+    <div
+      className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10 h-full flex flex-col items-center text-center transition-shadow duration-300 hover:border-teal/20"
+      style={{ transition: "box-shadow 0.3s, border-color 0.3s" }}
+      onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 25px rgba(0, 201, 219, 0.08), 0 0 50px rgba(0, 201, 219, 0.04)"; }}
+      onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; }}
+      data-testid={testId}
+    >
+      <div className="w-full flex items-start justify-between mb-6">
+        <div className="text-left">
+          <div className="font-bold text-white text-lg font-sans">{company}</div>
+          <div className="text-xs text-gray-500 mt-1">{industry}</div>
+        </div>
+        <div className="flex items-center gap-0.5 flex-shrink-0 mt-1">
+          {[...Array(5)].map((_, i) => (
+            <Star key={i} className="w-4 h-4 text-teal fill-teal" />
+          ))}
+        </div>
+      </div>
+
+      <div className="text-[72px] md:text-[80px] font-bold text-teal leading-none mb-2 font-sans">{metric}</div>
+      <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3">{metricLabel}</div>
+      <div className="text-xs text-gray-600 mb-6">{timeframe}</div>
+
+      <div className="w-full h-px bg-white/5 mb-6" />
+
+      <div className="w-full text-left border-l-[3px] border-teal/40 pl-5 mb-6">
+        <p className="text-gray-400 text-[15px] italic leading-relaxed">
+          "{quote}"
+        </p>
+      </div>
+
+      <div className="flex items-center gap-3 mt-auto">
+        <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-gray-400 font-sans">
+          {authorName.split(" ").map((n) => n[0]).join("")}
+        </div>
+        <div className="text-left">
+          <div className="text-sm text-white font-sans font-medium">{authorName}</div>
+          <div className="text-xs text-gray-500">{authorTitle}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function FeaturedResults() {
   return (
@@ -51,39 +117,31 @@ export function FeaturedResults() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Reveal delay={0.1}>
-            <div
-              className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10 h-full text-center flex flex-col items-center transition-shadow duration-300 hover:border-teal/20"
-              style={{ transition: "box-shadow 0.3s, border-color 0.3s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 25px rgba(0, 201, 219, 0.08), 0 0 50px rgba(0, 201, 219, 0.04)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; }}
-              data-testid="card-case-diverse"
-            >
-              <div className="text-[72px] md:text-[80px] font-bold text-teal leading-none mb-2 font-sans">7,500+</div>
-              <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-6">Positive Replies / Month</div>
-              <div className="w-12 h-px bg-teal/30 mb-6" />
-              <div className="font-bold text-white text-lg font-sans mb-3">Diverse · #128 Inc. 5000</div>
-              <p className="text-gray-400 text-[15px] italic leading-relaxed mt-2">
-                That's more replies than most agencies generate in a year.
-              </p>
-            </div>
+            <CaseStudyCard
+              metric="7,500+"
+              metricLabel="Positive Replies / Month"
+              timeframe="Achieved in 6 months"
+              company="Diverse"
+              industry="Growth Services · #128 Inc. 5000"
+              quote="Working with AutoUp transformed our outbound — the volume and quality of replies is unlike anything we've seen."
+              authorName="Client Partner"
+              authorTitle="VP of Growth, Diverse"
+              testId="card-case-diverse"
+            />
           </Reveal>
 
           <Reveal delay={0.2}>
-            <div
-              className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10 h-full text-center flex flex-col items-center transition-shadow duration-300 hover:border-teal/20"
-              style={{ transition: "box-shadow 0.3s, border-color 0.3s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 25px rgba(0, 201, 219, 0.08), 0 0 50px rgba(0, 201, 219, 0.04)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; }}
-              data-testid="card-case-reggora"
-            >
-              <div className="text-[72px] md:text-[80px] font-bold text-teal leading-none mb-2 font-sans">1,000+</div>
-              <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-6">Positive Replies / Month</div>
-              <div className="w-12 h-px bg-teal/30 mb-6" />
-              <div className="font-bold text-white text-lg font-sans mb-3">Reggora · $60M raised</div>
-              <p className="text-gray-400 text-[15px] italic leading-relaxed mt-2">
-                From zero outbound to 1,000+ replies in 90 days.
-              </p>
-            </div>
+            <CaseStudyCard
+              metric="1,000+"
+              metricLabel="Positive Replies / Month"
+              timeframe="Achieved in 90 days"
+              company="Reggora"
+              industry="Proptech · Series B"
+              quote="AutoUp built the entire outbound engine from scratch. The results speak for themselves."
+              authorName="Client Partner"
+              authorTitle="Head of Sales, Reggora"
+              testId="card-case-reggora"
+            />
           </Reveal>
         </div>
       </div>
