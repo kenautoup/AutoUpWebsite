@@ -1,12 +1,13 @@
 import ycLogoPath from "@assets/YC_1771038973523.png";
+import tcLogoPath from "@assets/techcrunchlogo_1771039496189.webp";
 
 export function Press() {
   const logos = [
     { name: "NYT", src: "/images/press/nyt.png", isSvg: false },
     { name: "WSJ", src: "/images/press/wsj.png", isSvg: false, smaller: true },
+    { name: "TechCrunch", src: tcLogoPath, isSvg: false },
     { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
     { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
-    { name: "TechCrunch", src: "/images/press/techcrunch.png", isSvg: false },
     { name: "YCombinator", src: ycLogoPath, isSvg: false },
     { name: "HBR", src: "/images/press/hbr.png", isSvg: false },
     { name: "WaPo", src: "/images/press/wapo.png", isSvg: false },
