@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
-import { Linkedin, ArrowRight } from "lucide-react";
-import { useRef, useState, useCallback, useEffect } from "react";
+import { Linkedin, ArrowRight, Play } from "lucide-react";
+import { useRef, useState } from "react";
 
 const linkedInPosts = [
   { id: 1, title: "How we booked 40+ meetings in 30 days" },
@@ -53,25 +53,56 @@ export function FeaturedResults() {
 
       <Reveal>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
-          <div className="bg-navy-card border border-white/5 rounded-2xl p-8 flex flex-col" data-testid="card-linkedin-embed">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-[#0A66C2] flex items-center justify-center">
-                <Linkedin className="w-5 h-5 text-white" />
+          <div className="bg-navy-card border border-white/5 rounded-2xl p-6 md:p-8 flex flex-col" data-testid="card-linkedin-embed">
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal to-teal/70 flex items-center justify-center font-bold text-white text-sm font-sans">KV</div>
+                <div>
+                  <div className="font-bold text-white font-sans text-[15px]">Ken Volk</div>
+                  <div className="text-xs text-gray-400">Founder @ AutoUp | B2B Outreach</div>
+                </div>
               </div>
-              <div>
-                <div className="font-bold text-white font-sans">Instantly Partner Spotlight</div>
-                <div className="text-xs text-gray-400">Featured on LinkedIn</div>
+              <Linkedin className="w-5 h-5 text-[#0A66C2] flex-shrink-0" />
+            </div>
+
+            <div className="max-w-[480px]">
+              <p className="text-[14px] text-gray-300 leading-relaxed mb-1">
+                Honored to be featured by Instantly as a Certified Partner.
+              </p>
+              <p className="text-[14px] text-gray-300 leading-relaxed mb-1">
+                We've sent over 5M+ emails through their platform, generated 10K+ positive replies per month, and booked 250+ Fortune 500 meetings for our clients.
+              </p>
+              <p className="text-[14px] text-gray-300 leading-relaxed line-clamp-2">
+                Here's the full breakdown of how we built the infrastructure, the sending methodology, and why our results consistently outperform every other agency in the space...
+              </p>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7365720494542581761/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[14px] text-gray-500 hover:text-gray-300 transition-colors mt-1 inline-block"
+                data-testid="link-see-more"
+              >
+                ...see more
+              </a>
+            </div>
+
+            <a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7365720494542581761/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 block rounded-xl overflow-hidden bg-white/5 hover:bg-white/[0.08] transition-colors group"
+              data-testid="link-linkedin-video"
+            >
+              <div className="flex items-center justify-center h-[180px] relative">
+                <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                  <Play className="w-6 h-6 text-white fill-white ml-1" />
+                </div>
               </div>
-            </div>
-            <div className="flex-1 rounded-xl overflow-hidden min-h-[280px]">
-              <iframe
-                src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7365720494542581761"
-                allowFullScreen
-                title="Instantly Partner Spotlight LinkedIn Post"
-                className="w-full h-full min-h-[400px] border-0"
-                data-testid="linkedin-embed"
-              />
-            </div>
+              <div className="px-5 pb-4 pt-2">
+                <p className="text-sm font-bold text-white font-sans">Watch the full breakdown</p>
+                <p className="text-xs text-gray-500">linkedin.com</p>
+              </div>
+            </a>
           </div>
 
           <div className="grid grid-rows-2 gap-6">
