@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    quote: "AutoUp built custom scrapers to source thousands of valid emails for an ICP not in traditional directories. We average 20+ positive replies per week and have booked dozens of qualified calls.",
+    quote: "AutoUp built custom scrapers to source thousands of valid emails for an ICP not in traditional directories. We average 20+ positive replies per week and have booked hundreds of qualified calls.",
     initials: "JC",
     photo: "/images/avatars/avatar4.jpg",
     name: "Jill Chen",
