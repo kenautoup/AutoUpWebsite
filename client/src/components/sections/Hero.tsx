@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import instantlyLogo from "@assets/instantlyexpert_1770991537677.png";
 
@@ -34,7 +34,7 @@ export function Hero() {
               className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#3570E0] text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(69,128,247,0.3)] hover:shadow-[0_8px_30px_rgba(69,128,247,0.4)] hover:-translate-y-1"
               data-testid="link-hero-cta"
             >
-              Book a Strategy Call <ArrowRight className="w-5 h-5" />
+              Book a Call <ArrowUpRight className="w-5 h-5" />
             </a>
             <div className="text-sm text-[#8a9bb0] font-medium">
               Free 30-minute consultation · No commitment
