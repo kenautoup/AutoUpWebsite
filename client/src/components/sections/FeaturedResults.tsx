@@ -63,11 +63,14 @@ export function FeaturedResults() {
                 <div className="text-xs text-gray-400">Featured on LinkedIn</div>
               </div>
             </div>
-            <div className="flex-1 bg-white/5 rounded-xl flex items-center justify-center min-h-[280px]">
-              <div className="text-center text-gray-500">
-                <Linkedin className="w-12 h-12 mx-auto mb-3 opacity-30" />
-                <p className="text-sm">LinkedIn post embed</p>
-              </div>
+            <div className="flex-1 rounded-xl overflow-hidden min-h-[280px]">
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7365720494542581761"
+                allowFullScreen
+                title="Instantly Partner Spotlight LinkedIn Post"
+                className="w-full h-full min-h-[400px] border-0"
+                data-testid="linkedin-embed"
+              />
             </div>
           </div>
 
