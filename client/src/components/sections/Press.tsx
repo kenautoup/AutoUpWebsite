@@ -1,3 +1,5 @@
+import ycLogoPath from "@assets/YC_1771038973523.png";
+
 export function Press() {
   const logos = [
     { name: "NYT", src: "/images/press/nyt.png", isSvg: false },
@@ -5,6 +7,7 @@ export function Press() {
     { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
     { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
     { name: "TechCrunch", src: "/images/press/techcrunch.png", isSvg: false },
+    { name: "YCombinator", src: ycLogoPath, isSvg: false },
     { name: "HBR", src: "/images/press/hbr.png", isSvg: false },
     { name: "WaPo", src: "/images/press/wapo.png", isSvg: false },
     { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false },
