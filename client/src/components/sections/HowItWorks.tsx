@@ -11,7 +11,7 @@ export function HowItWorks() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             The Growth Engine<br />Behind Your <em className="text-teal italic">B2B Pipeline</em>
           </h2>
-          <p className="text-[19px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
             We don't just run campaigns — we build the entire outbound machine from data to delivery.
           </p>
         </Reveal>
@@ -35,12 +35,12 @@ export function HowItWorks() {
             desc: "Warmed inboxes, scaled laterally, real-time monitoring — built on a sending method no one else has. Your emails hit primary while your competitors land in spam."
           }
         ].map((item, i) => (
-          <Reveal key={i} delay={i * 0.1} className="bg-navy-card border border-white/5 p-8 rounded-2xl hover:border-teal/30 hover:bg-navy-card/80 transition-all group">
+          <Reveal key={i} delay={i * 0.1} className="bg-navy-card border border-white/5 p-10 rounded-2xl hover:border-teal/30 hover:bg-navy-card/80 transition-all group">
             <div className="bg-teal/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               {item.icon}
             </div>
-            <h3 className="text-[21px] font-bold mb-3 font-sans not-italic">{item.title}</h3>
-            <p className="text-gray-400 leading-relaxed text-base">{item.desc}</p>
+            <h3 className="text-[22px] font-bold mb-4 font-sans not-italic">{item.title}</h3>
+            <p className="text-gray-400 leading-[1.8] text-[17px]">{item.desc}</p>
           </Reveal>
         ))}
       </div>

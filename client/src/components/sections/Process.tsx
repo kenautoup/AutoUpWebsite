@@ -10,7 +10,7 @@ export function Process() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Agile, Collaborative, <em className="text-teal italic">Relentless</em>
           </h2>
-          <p className="text-[19px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
             We don't just ask our clients to join weekly scrum calls — we require it. Your growth is a team sport.
           </p>
         </Reveal>
@@ -25,12 +25,12 @@ export function Process() {
           { num: "02", title: "Execution", desc: "We source data, write personalized sequences, configure infrastructure, and launch campaigns at scale." },
           { num: "03", title: "Iteration", desc: "We review performance weekly, A/B test messaging, and iterate on the fly until we find what converts best." },
         ].map((step, i) => (
-          <Reveal key={i} delay={i * 0.1} className="relative bg-navy p-8 rounded-2xl border border-white/5 z-10 text-center hover:-translate-y-2 transition-transform duration-300">
+          <Reveal key={i} delay={i * 0.1} className="relative bg-navy p-10 rounded-2xl border border-white/5 z-10 text-center hover:-translate-y-2 transition-transform duration-300">
             <div className="w-12 h-12 mx-auto bg-navy-deep border border-teal text-teal rounded-full flex items-center justify-center font-bold text-lg mb-6 shadow-[0_0_20px_rgba(0,201,219,0.2)]">
               {step.num}
             </div>
-            <h3 className="text-[21px] font-bold mb-3">{step.title}</h3>
-            <p className="text-gray-400 text-base">{step.desc}</p>
+            <h3 className="text-[22px] font-bold mb-4">{step.title}</h3>
+            <p className="text-gray-400 text-[17px] leading-[1.8]">{step.desc}</p>
           </Reveal>
         ))}
       </div>
@@ -41,7 +41,7 @@ export function Process() {
           { val: "10K+", label: "Positive Replies / Month" },
           { val: "250+", label: "Fortune 500 Meetings Booked" },
         ].map((stat, i) => (
-          <Reveal key={i} delay={0.2 + (i * 0.1)} className="bg-navy-card/50 p-6 md:p-8 rounded-2xl border border-white/5 text-center">
+          <Reveal key={i} delay={0.2 + (i * 0.1)} className="bg-navy-card/50 p-8 md:p-10 rounded-2xl border border-white/5 text-center">
             <div className="text-3xl md:text-5xl font-bold text-white mb-2">{stat.val}</div>
             <div className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">{stat.label}</div>
           </Reveal>

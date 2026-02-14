@@ -26,7 +26,7 @@ function CaseStudyCard({
 }) {
   return (
     <div
-      className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10 h-full flex flex-col items-center text-center transition-shadow duration-300 hover:border-teal/20"
+      className="bg-navy-card border border-white/5 rounded-2xl p-10 md:p-12 h-full flex flex-col items-center text-center transition-shadow duration-300 hover:border-teal/20"
       style={{ transition: "box-shadow 0.3s, border-color 0.3s" }}
       onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 25px rgba(0, 201, 219, 0.08), 0 0 50px rgba(0, 201, 219, 0.04)"; }}
       onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; }}
@@ -34,8 +34,8 @@ function CaseStudyCard({
     >
       <div className="w-full flex items-start justify-between mb-6">
         <div className="text-left">
-          <div className="font-bold text-white text-[18px] font-sans">{company}</div>
-          <div className="text-[13px] text-gray-500 mt-1">{industry}</div>
+          <div className="font-bold text-white text-[20px] font-sans">{company}</div>
+          <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
         </div>
         <div className="flex items-center gap-0.5 flex-shrink-0 mt-1">
           {[...Array(5)].map((_, i) => (
@@ -45,13 +45,13 @@ function CaseStudyCard({
       </div>
 
       <div className="text-[72px] md:text-[80px] font-bold text-teal leading-none mb-2 font-sans">{metric}</div>
-      <div className="text-[13px] text-gray-500 uppercase tracking-wider font-bold mb-3">{metricLabel}</div>
-      <div className="text-sm text-gray-600 mb-6">{timeframe}</div>
+      <div className="text-[14px] text-gray-500 uppercase tracking-wider font-bold mb-3">{metricLabel}</div>
+      <div className="text-[15px] text-gray-600 mb-6">{timeframe}</div>
 
       <div className="w-full h-px bg-white/5 mb-6" />
 
       <div className="w-full text-left border-l-[3px] border-teal/40 pl-5 mb-6">
-        <p className="text-gray-400 text-base italic leading-relaxed">
+        <p className="text-gray-400 text-[17px] italic leading-[1.8]">
           "{quote}"
         </p>
       </div>
@@ -61,8 +61,8 @@ function CaseStudyCard({
           {authorName.split(" ").map((n) => n[0]).join("")}
         </div>
         <div className="text-left">
-          <div className="text-[15px] text-white font-sans font-medium">{authorName}</div>
-          <div className="text-xs text-gray-500">{authorTitle}</div>
+          <div className="text-[16px] text-white font-sans font-medium">{authorName}</div>
+          <div className="text-[13px] text-gray-500">{authorTitle}</div>
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@ export function FeaturedResults() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-sans">
             Proof That <em className="text-teal italic">It Works</em>
           </h2>
-          <p className="text-[19px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
             Real campaigns, real numbers, real outcomes.
           </p>
         </Reveal>

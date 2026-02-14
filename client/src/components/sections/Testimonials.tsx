@@ -157,7 +157,7 @@ export function Testimonials() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Real People. <em className="text-teal italic">Real Results.</em>
           </h2>
-          <p className="text-[19px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
             Don't take our word for it — hear from the founders and leaders who've scaled with us.
           </p>
         </Reveal>
@@ -176,7 +176,7 @@ export function Testimonials() {
         {doubled.map((t, i) => (
           <div
             key={i}
-            className="flex-shrink-0 w-[90vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-navy-card border border-white/5 rounded-2xl p-8 flex flex-col justify-between"
+            className="flex-shrink-0 w-[90vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-navy-card border border-white/5 rounded-2xl p-10 flex flex-col justify-between"
             data-testid={`card-testimonial-${i}`}
           >
             <div>
@@ -185,7 +185,7 @@ export function Testimonials() {
                   <Star key={j} className="w-4 h-4 fill-teal" />
                 ))}
               </div>
-              <blockquote className="text-gray-300 leading-relaxed mb-8 text-base">
+              <blockquote className="text-gray-300 leading-[1.8] mb-8 text-[17px]">
                 "{t.quote}"
               </blockquote>
             </div>
@@ -199,8 +199,8 @@ export function Testimonials() {
                 </div>
               )}
               <div>
-                <div className="font-bold text-white font-sans text-[15px]">{t.name}</div>
-                <div className="text-xs text-gray-400">{t.role}</div>
+                <div className="font-bold text-white font-sans text-[16px]">{t.name}</div>
+                <div className="text-[13px] text-gray-400">{t.role}</div>
               </div>
             </div>
           </div>

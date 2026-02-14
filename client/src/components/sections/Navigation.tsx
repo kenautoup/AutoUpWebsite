@@ -58,7 +58,7 @@ export function Navigation() {
                     if (link.href.startsWith('#')) scrollToSection(e, link.href);
                   }}
                   className={cn(
-                    "text-[15px] font-sans font-medium transition-colors",
+                    "text-[16px] font-sans font-medium transition-colors",
                     scrolled
                       ? "text-gray-300 hover:text-white"
                       : "text-gray-600 hover:text-gray-900"
