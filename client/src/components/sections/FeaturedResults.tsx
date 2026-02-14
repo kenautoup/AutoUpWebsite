@@ -2,6 +2,8 @@ import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ArrowRight, Star } from "lucide-react";
 import instantlyLogo from "@assets/instantly_1771035044332.png";
+import diverseLogo from "@assets/diverselogo_1771041370182.png";
+import reggoraLogo from "@assets/reggoralogo_1771041370182.jpg";
 
 function CaseStudyCard({
   metric,
@@ -13,6 +15,7 @@ function CaseStudyCard({
   authorName,
   authorTitle,
   testId,
+  logo,
 }: {
   metric: string;
   metricLabel: string;
@@ -23,6 +26,7 @@ function CaseStudyCard({
   authorName: string;
   authorTitle: string;
   testId: string;
+  logo?: string;
 }) {
   return (
     <div
@@ -33,9 +37,19 @@ function CaseStudyCard({
       data-testid={testId}
     >
       <div className="w-full flex items-start justify-between mb-6">
-        <div className="text-left">
-          <div className="font-bold text-white text-[20px] font-sans">{company}</div>
-          <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
+        <div className="flex items-center gap-3 text-left">
+          {logo && (
+            <img
+              src={logo}
+              alt={company}
+              className="h-8 w-auto"
+              style={{ filter: "brightness(0) invert(1)", mixBlendMode: "screen" }}
+            />
+          )}
+          <div>
+            <div className="font-bold text-white text-[20px] font-sans">{company}</div>
+            <div className="text-[14px] text-gray-500 mt-1">{industry}</div>
+          </div>
         </div>
         <div className="flex items-center gap-0.5 flex-shrink-0 mt-1">
           {[...Array(5)].map((_, i) => (
@@ -127,6 +141,7 @@ export function FeaturedResults() {
               authorName="Client Partner"
               authorTitle="VP of Growth, Diverse"
               testId="card-case-diverse"
+              logo={diverseLogo}
             />
           </Reveal>
 
@@ -141,6 +156,7 @@ export function FeaturedResults() {
               authorName="Client Partner"
               authorTitle="Head of Sales, Reggora"
               testId="card-case-reggora"
+              logo={reggoraLogo}
             />
           </Reveal>
         </div>
