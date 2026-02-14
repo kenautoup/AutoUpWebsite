@@ -14,14 +14,14 @@ export function Hero() {
 
         <Reveal delay={0.1}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] font-sans text-[#1e293b]">
-            We Build the Pipeline.<br />
-            <em>You Close the Deals.</em>
+            10,000+ Positive Replies.<br />
+            <em>Every Single Month.</em>
           </h1>
         </Reveal>
 
         <Reveal delay={0.2}>
           <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-2xl mx-auto mb-10 leading-relaxed">
-            AI-powered data extraction, expert copywriting, and automated outbound campaigns — personalized at scale, managed end-to-end.
+            AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure — engineered into one outbound system that fills your pipeline on autopilot.
           </p>
         </Reveal>
 
