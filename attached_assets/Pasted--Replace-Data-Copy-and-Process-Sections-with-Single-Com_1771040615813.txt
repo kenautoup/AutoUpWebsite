@@ -1,0 +1,56 @@
+# Replace Data, Copy, and Process Sections with Single Comparison Section
+
+## What to Remove
+
+Delete these three sections entirely:
+
+1. The "#1 — DATA" section ("Your TAM, Sourced & Verified. Not Scraped & Prayed." with the two comparison cards)
+2. The "#2 — COPY" section ("Every Email Written Like It Came From You" with the two email mockup cards)
+3. The "#3 — PROCESS" section ("Agile, Collaborative, Relentless" with the Discovery / Execution / Iteration step cards and the repeated stats bar below it)
+
+Remove all of these — including all their subheadings, cards, email mockups, and step cards.
+
+## What to Add in Their Place
+
+Replace all three sections with a single new section. This section should sit between the three pillar cards ("Your Data, Not a List" / "Copy That Sounds Human" / "Proprietary Infrastructure") and the "Featured Results" dark section.
+
+### Section Content
+
+- Background: Light gray (#f7f8fa), consistent with other light sections
+- Section tag (cyan uppercase): "WHY IT WORKS"
+- Headline: "The Old Playbook Is" (regular) + "Toast." (italic cyan accent, same treatment as other italic accent headlines on the page)
+- No subtext paragraph needed — go straight into the comparison
+
+### Comparison Layout
+
+Two cards side by side, similar width to the existing content area:
+
+**Left card — "THE OLD WAY"**
+- White background, light border (#eef1f5)
+- Label: "THE OLD WAY" in small uppercase gray text
+- Use red/coral X icons (same style as the ones from the old "Typical Agencies" card) for each bullet
+- Bullets:
+  - Bought lists from ZoomInfo and Apollo
+  - Template emails with merge tags
+  - Shared sending infrastructure
+  - Flagged as promotional, lands in spam
+  - Same prospects your competitors are emailing
+
+**Right card — "THE AUTOUP SYSTEM"**
+- Dark background (#0c1b2e), cyan border accent
+- Label: "THE AUTOUP SYSTEM" in small uppercase cyan text
+- Use cyan checkmark icons for each bullet, white text
+- Bullets:
+  - AI-built databases exclusive to each client
+  - Every sequence written by strategists who've sent millions of emails
+  - Proprietary infrastructure, warmed and scaled in real time
+  - Hits primary inbox consistently
+  - Fresh contacts your competitors can't access
+
+### Styling Notes
+
+- The two cards should be equal width, side by side on desktop, stacked on mobile
+- The contrast between the white left card and dark right card is intentional — it visually sells the comparison
+- Card border-radius, padding, and spacing should match the existing card styles on the page
+- This is the ONLY new section — do not add anything else to replace the removed sections
+- The page flow after this change should be: Hero → Stats → Press → The System (pillars) → Why It Works (this new section) → Featured Results (dark) → Testimonials → CTA → Footer

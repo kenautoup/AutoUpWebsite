@@ -1,0 +1,72 @@
+import { Reveal } from "@/components/ui/reveal";
+import { Section } from "@/components/ui/section";
+import { X, Check } from "lucide-react";
+
+export function WhyItWorks() {
+  const oldWay = [
+    "Bought lists from ZoomInfo and Apollo",
+    "Template emails with merge tags",
+    "Shared sending infrastructure",
+    "Flagged as promotional, lands in spam",
+    "Same prospects your competitors are emailing",
+  ];
+
+  const autoUpWay = [
+    "AI-built databases exclusive to each client",
+    "Every sequence written by strategists who've sent millions of emails",
+    "Proprietary infrastructure, warmed and scaled in real time",
+    "Hits primary inbox consistently",
+    "Fresh contacts your competitors can't access",
+  ];
+
+  return (
+    <Section className="bg-[#f7f8fa]">
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <Reveal>
+          <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Why It Works</div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#1e293b]">
+            The Old Playbook Is <em>Toast.</em>
+          </h2>
+        </Reveal>
+      </div>
+
+      <Reveal delay={0.2}>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div
+            className="bg-white rounded-xl border border-[#eef1f5] p-8 md:p-10"
+            data-testid="card-old-way"
+          >
+            <div className="text-[13px] font-bold uppercase tracking-[2px] text-[#8a9bb0] mb-8">The Old Way</div>
+            <div className="space-y-5">
+              {oldWay.map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-500/10 flex items-center justify-center mt-0.5">
+                    <X className="w-3.5 h-3.5 text-red-500" />
+                  </div>
+                  <span className="text-[17px] text-[#64748b] leading-relaxed">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div
+            className="bg-[#0c1b2e] rounded-xl border border-[#00C9DB]/20 p-8 md:p-10"
+            data-testid="card-autoup-system"
+          >
+            <div className="text-[13px] font-bold uppercase tracking-[2px] text-[#00C9DB] mb-8">The AutoUp System</div>
+            <div className="space-y-5">
+              {autoUpWay.map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#00C9DB]/10 flex items-center justify-center mt-0.5">
+                    <Check className="w-3.5 h-3.5 text-[#00C9DB]" />
+                  </div>
+                  <span className="text-[17px] text-white/90 leading-relaxed">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Reveal>
+    </Section>
+  );
+}
