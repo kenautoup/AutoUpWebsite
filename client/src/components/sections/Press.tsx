@@ -2,7 +2,7 @@ import tcLogoPath from "@assets/techcrunchlogo_1771039496189.webp";
 
 export function Press() {
   const logos = [
-    { name: "NYT", src: "/images/press/nyt.png", isSvg: false },
+    { name: "NYT", src: "/images/press/nyt.png", isSvg: false, larger: true },
     { name: "WSJ", src: "/images/press/wsj.png", isSvg: false, smaller: true },
     { name: "TechCrunch", src: tcLogoPath, isSvg: false },
     { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
@@ -29,7 +29,7 @@ export function Press() {
               key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              className={`${(logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
+              className={`${(logo as any).smaller ? "h-14 md:h-[78px]" : (logo as any).larger ? "h-28 md:h-36" : "h-20 md:h-28"} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
               data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
           ))}
