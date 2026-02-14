@@ -4,10 +4,8 @@ import { Section } from "@/components/ui/section";
 
 export function CTA() {
   return (
-    <Section className="bg-navy relative" data-theme="dark">
-      <div className="absolute inset-0 bg-gradient-to-t from-teal/10 to-transparent pointer-events-none" />
-      
-      <div className="text-center max-w-4xl mx-auto relative z-10">
+    <Section className="bg-navy" data-theme="dark">
+      <div className="text-center max-w-4xl mx-auto">
         <Reveal>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Ready to <em className="text-teal italic">10x your pipeline?</em>
