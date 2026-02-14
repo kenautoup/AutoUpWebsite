@@ -75,10 +75,10 @@ export function FeaturedResults() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Featured Results</div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-sans">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-sans text-white">
             Proof That <em className="text-teal italic">It Works</em>
           </h2>
-          <p className="text-[20px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] text-white/50 leading-relaxed">
             Real campaigns, real numbers, real outcomes.
           </p>
         </Reveal>
