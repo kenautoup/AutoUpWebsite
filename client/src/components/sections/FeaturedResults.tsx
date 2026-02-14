@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import instantlyLogo from "@assets/instantlyexpert_1770991537677.png";
 
 export function FeaturedResults() {
   return (
@@ -19,18 +20,11 @@ export function FeaturedResults() {
 
       <div className="flex flex-col gap-6">
         <Reveal>
-          <div className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10" data-testid="card-instantly-spotlight">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-teal" />
-              </div>
-            </div>
-            <h3 className="text-xl md:text-2xl font-bold text-white font-sans mb-3">
-              Instantly.ai chose AutoUp to run their own outbound.
+          <div className="bg-navy-card border border-white/5 rounded-2xl py-16 md:py-20 px-8 text-center flex flex-col items-center" data-testid="card-instantly-spotlight">
+            <img src={instantlyLogo} alt="Instantly Certified Expert" className="h-20 w-auto mb-8" />
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white font-sans mb-8 max-w-3xl leading-tight">
+              The world's #1 cold email platform chose us to run their outbound.
             </h3>
-            <p className="text-gray-400 text-base md:text-lg mb-6 max-w-2xl">
-              The world's fastest-growing cold email platform trusts us to fill their pipeline.
-            </p>
             <a
               href="https://www.linkedin.com/feed/update/urn:li:activity:7365720494542581761/"
               target="_blank"
@@ -48,9 +42,9 @@ export function FeaturedResults() {
             <div className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10 h-full" data-testid="card-case-diverse">
               <div className="text-5xl md:text-6xl font-bold text-teal mb-2 font-sans">7,500+</div>
               <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-6">Positive Replies / Month</div>
-              <div className="font-bold text-white text-lg font-sans mb-2">Diverse</div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Outbound engine for the #128 fastest-growing company in America.
+              <div className="font-bold text-white text-lg font-sans mb-2">Diverse · #128 Inc. 5000</div>
+              <p className="text-gray-400 text-sm italic leading-relaxed">
+                That's more replies than most agencies generate in a year.
               </p>
             </div>
           </Reveal>
@@ -59,9 +53,9 @@ export function FeaturedResults() {
             <div className="bg-navy-card border border-white/5 rounded-2xl p-8 md:p-10 h-full" data-testid="card-case-reggora">
               <div className="text-5xl md:text-6xl font-bold text-teal mb-2 font-sans">1,000+</div>
               <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-6">Positive Replies / Month</div>
-              <div className="font-bold text-white text-lg font-sans mb-2">Reggora</div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Outbound engine for the $60M-funded proptech leader.
+              <div className="font-bold text-white text-lg font-sans mb-2">Reggora · $60M raised</div>
+              <p className="text-gray-400 text-sm italic leading-relaxed">
+                From zero outbound to 1,000+ replies in 90 days.
               </p>
             </div>
           </Reveal>
