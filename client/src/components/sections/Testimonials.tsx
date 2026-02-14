@@ -18,7 +18,7 @@ const testimonials = [
     initials: "PB",
     photo: "/images/avatars/avatar1.jpg",
     name: "Patrick Burkholder",
-    role: "VP of Sales, Rentable",
+    role: "VP of Sales, MavenAI",
   },
   {
     stars: 5,
