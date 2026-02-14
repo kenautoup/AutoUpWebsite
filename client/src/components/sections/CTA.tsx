@@ -18,7 +18,7 @@ export function CTA() {
             href="https://calendly.com/ken-autoup/autoup-introduction"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-teal hover:bg-teal-dark text-navy font-bold text-xl px-10 py-5 rounded-xl transition-all shadow-[0_4px_24px_rgba(0,201,219,0.25)] hover:shadow-[0_8px_36px_rgba(0,201,219,0.4)] hover:-translate-y-1 mb-6"
+            className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#3570E0] text-white font-bold text-xl px-10 py-5 rounded-xl transition-all shadow-[0_4px_20px_rgba(69,128,247,0.3)] hover:shadow-[0_8px_30px_rgba(69,128,247,0.4)] hover:-translate-y-1 mb-6"
             data-testid="link-cta-schedule"
           >
             Schedule a Call <ArrowRight className="w-6 h-6" />
