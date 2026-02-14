@@ -157,7 +157,7 @@ export function Testimonials() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Real People. <em className="text-teal italic">Real Results.</em>
           </h2>
-          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] text-gray-400 leading-relaxed">
             Don't take our word for it — hear from the founders and leaders who've scaled with us.
           </p>
         </Reveal>
@@ -185,7 +185,7 @@ export function Testimonials() {
                   <Star key={j} className="w-4 h-4 fill-teal" />
                 ))}
               </div>
-              <blockquote className="text-gray-300 leading-[1.8] mb-8 text-[17px]">
+              <blockquote className="text-gray-300 leading-[1.8] mb-8 text-[18px]">
                 "{t.quote}"
               </blockquote>
             </div>

@@ -45,13 +45,13 @@ function CaseStudyCard({
       </div>
 
       <div className="text-[72px] md:text-[80px] font-bold text-teal leading-none mb-2 font-sans">{metric}</div>
-      <div className="text-[14px] text-gray-500 uppercase tracking-wider font-bold mb-3">{metricLabel}</div>
+      <div className="text-[15px] text-gray-500 uppercase tracking-wider font-bold mb-3">{metricLabel}</div>
       <div className="text-[15px] text-gray-600 mb-6">{timeframe}</div>
 
       <div className="w-full h-px bg-white/5 mb-6" />
 
       <div className="w-full text-left border-l-[3px] border-teal/40 pl-5 mb-6">
-        <p className="text-gray-400 text-[17px] italic leading-[1.8]">
+        <p className="text-gray-400 text-[18px] italic leading-[1.8]">
           "{quote}"
         </p>
       </div>
@@ -78,7 +78,7 @@ export function FeaturedResults() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-sans">
             Proof That <em className="text-teal italic">It Works</em>
           </h2>
-          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] text-gray-400 leading-relaxed">
             Real campaigns, real numbers, real outcomes.
           </p>
         </Reveal>

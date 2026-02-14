@@ -10,7 +10,7 @@ export function Process() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Agile, Collaborative, <em className="text-teal italic">Relentless</em>
           </h2>
-          <p className="text-[20px] md:text-[21px] text-gray-400 leading-relaxed">
+          <p className="text-[20px] text-gray-400 leading-relaxed">
             We don't just ask our clients to join weekly scrum calls — we require it. Your growth is a team sport.
           </p>
         </Reveal>
@@ -29,8 +29,8 @@ export function Process() {
             <div className="w-12 h-12 mx-auto bg-navy-deep border border-teal text-teal rounded-full flex items-center justify-center font-bold text-lg mb-6 shadow-[0_0_20px_rgba(0,201,219,0.2)]">
               {step.num}
             </div>
-            <h3 className="text-[22px] font-bold mb-4">{step.title}</h3>
-            <p className="text-gray-400 text-[17px] leading-[1.8]">{step.desc}</p>
+            <h3 className="text-[24px] font-bold mb-4">{step.title}</h3>
+            <p className="text-gray-400 text-[18px] leading-[1.8]">{step.desc}</p>
           </Reveal>
         ))}
       </div>
@@ -42,8 +42,8 @@ export function Process() {
           { val: "250+", label: "Fortune 500 Meetings Booked" },
         ].map((stat, i) => (
           <Reveal key={i} delay={0.2 + (i * 0.1)} className="bg-navy-card/50 p-8 md:p-10 rounded-2xl border border-white/5 text-center">
-            <div className="text-3xl md:text-5xl font-bold text-white mb-2">{stat.val}</div>
-            <div className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">{stat.label}</div>
+            <div className="text-[48px] md:text-[58px] font-bold text-white mb-2 leading-none">{stat.val}</div>
+            <div className="text-[13px] md:text-[15px] font-medium text-gray-500 uppercase tracking-wider">{stat.label}</div>
           </Reveal>
         ))}
       </div>

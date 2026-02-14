@@ -72,8 +72,8 @@ export function Hero() {
               { label: "Fortune 500 Meetings Booked", value: "250+" },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
-                <div className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">{stat.value}</div>
-                <div className="text-sm font-medium text-gray-400 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-[40px] md:text-[48px] font-bold text-gray-900 tracking-tight leading-none">{stat.value}</div>
+                <div className="text-[14px] md:text-[15px] font-medium text-gray-400 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>

@@ -12,7 +12,7 @@ export function CTA() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Ready to <em className="text-teal italic">10x your pipeline?</em>
           </h2>
-          <p className="text-[20px] md:text-[22px] text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[20px] text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
             Book a free strategy call and see what's possible when experts build your outbound engine.
           </p>
           
