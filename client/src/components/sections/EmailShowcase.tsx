@@ -10,7 +10,7 @@ export function EmailShowcase() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Every Email Written <em className="text-teal italic">Like It Came From You</em>
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-[19px] text-gray-400 leading-relaxed">
             If it reads like a cold email, it gets ignored. We make it sound like a real person — because it is.
           </p>
         </Reveal>
@@ -29,7 +29,7 @@ export function EmailShowcase() {
               <div>To: {'{FirstName}'}</div>
               <div className="font-medium text-slate-800 mt-1">Quick question about {'{Company}'}</div>
             </div>
-            <div className="space-y-4 text-sm leading-relaxed">
+            <div className="space-y-4 text-base leading-relaxed">
               <p>Hi {'{FirstName}'},</p>
               <p>I noticed {'{Company}'} is growing fast. We help companies like yours with outbound and I'd love to chat.</p>
               <p>Would you be open to a quick call this week?</p>
@@ -53,7 +53,7 @@ export function EmailShowcase() {
               <div>To: Sarah Jennings</div>
               <div className="font-medium text-slate-800 mt-1">Saw the Series B — congrats</div>
             </div>
-            <div className="space-y-4 text-sm leading-relaxed">
+            <div className="space-y-4 text-base leading-relaxed">
               <p>Hey Sarah,</p>
               <p>Congrats on the raise — saw the announcement on LinkedIn. With the growth push, I imagine outbound is top of mind.</p>
               <p>We just helped a similar company book 40+ meetings in 6 weeks. Happy to share the playbook if useful.</p>

@@ -11,7 +11,7 @@ export function HowItWorks() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             The Growth Engine<br />Behind Your <em className="text-teal italic">B2B Pipeline</em>
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-[19px] text-gray-400 leading-relaxed">
             We don't just run campaigns — we build the entire outbound machine from data to delivery.
           </p>
         </Reveal>
@@ -39,8 +39,8 @@ export function HowItWorks() {
             <div className="bg-teal/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               {item.icon}
             </div>
-            <h3 className="text-xl font-bold mb-3 font-sans not-italic">{item.title}</h3>
-            <p className="text-gray-400 leading-relaxed">{item.desc}</p>
+            <h3 className="text-[21px] font-bold mb-3 font-sans not-italic">{item.title}</h3>
+            <p className="text-gray-400 leading-relaxed text-base">{item.desc}</p>
           </Reveal>
         ))}
       </div>

@@ -10,7 +10,7 @@ export function Process() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Agile, Collaborative, <em className="text-teal italic">Relentless</em>
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-[19px] text-gray-400 leading-relaxed">
             We don't just ask our clients to join weekly scrum calls — we require it. Your growth is a team sport.
           </p>
         </Reveal>
@@ -29,8 +29,8 @@ export function Process() {
             <div className="w-12 h-12 mx-auto bg-navy-deep border border-teal text-teal rounded-full flex items-center justify-center font-bold text-lg mb-6 shadow-[0_0_20px_rgba(0,201,219,0.2)]">
               {step.num}
             </div>
-            <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-            <p className="text-gray-400">{step.desc}</p>
+            <h3 className="text-[21px] font-bold mb-3">{step.title}</h3>
+            <p className="text-gray-400 text-base">{step.desc}</p>
           </Reveal>
         ))}
       </div>

@@ -12,7 +12,7 @@ export function Comparison() {
             Your TAM, Sourced & Verified.<br />
             <em className="text-teal italic">Not Scraped & Prayed.</em>
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-[19px] text-gray-400 leading-relaxed">
             Most agencies buy a list and hit send. We build your contact database from scratch — verified, enriched, and uniquely yours.
           </p>
         </Reveal>
@@ -29,7 +29,7 @@ export function Comparison() {
               "Stale data full of job changers and dead addresses",
               "Same prospects your competitors are emailing"
             ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-gray-400">
+              <li key={i} className="flex items-start gap-3 text-gray-400 text-base">
                 <X className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                 <span>{item}</span>
               </li>
@@ -47,7 +47,7 @@ export function Comparison() {
               "Every address verified and enriched before sending",
               "Fresh, unique data your competitors can't access"
             ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-white">
+              <li key={i} className="flex items-start gap-3 text-white text-base">
                 <Check className="w-5 h-5 text-teal shrink-0 mt-0.5" />
                 <span>{item}</span>
               </li>

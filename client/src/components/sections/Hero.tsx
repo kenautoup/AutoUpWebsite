@@ -20,7 +20,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
             AI-powered data extraction, expert copywriting, and automated outbound campaigns — personalized at scale, managed end-to-end.
           </p>
         </Reveal>

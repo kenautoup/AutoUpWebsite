@@ -10,20 +10,20 @@ export function Footer() {
         </Link>
         
         <div className="flex items-center gap-6">
-          <a href="https://autoup.io/terms-privacy/" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
+          <a href="https://autoup.io/terms-privacy/" className="text-sm md:text-[14px] text-gray-500 hover:text-gray-300 transition-colors">
             Terms & Privacy
           </a>
           <a 
             href="https://calendly.com/ken-autoup/autoup-introduction" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-sm text-gray-500 hover:text-gray-300 transition-colors"
+            className="text-sm md:text-[14px] text-gray-500 hover:text-gray-300 transition-colors"
           >
             Contact
           </a>
         </div>
         
-        <div className="text-sm text-gray-600">
+        <div className="text-sm md:text-[14px] text-gray-600">
           © {new Date().getFullYear()} AutoUp. All Rights Reserved.
         </div>
       </div>
