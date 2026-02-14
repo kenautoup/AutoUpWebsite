@@ -3,7 +3,7 @@ import { Section } from "@/components/ui/section";
 
 export function Process() {
   return (
-    <Section id="results" className="bg-[#f7f8fa]">
+    <Section className="bg-[#f7f8fa]">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">#3 — Process</div>

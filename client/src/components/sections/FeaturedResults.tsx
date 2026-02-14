@@ -86,7 +86,7 @@ function CaseStudyCard({
 
 export function FeaturedResults() {
   return (
-    <Section id="featured-results" className="bg-navy" data-theme="dark">
+    <Section id="results" className="bg-navy" data-theme="dark">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Featured Results</div>
