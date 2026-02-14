@@ -34,7 +34,7 @@ const testimonials = [
     initials: "JC",
     photo: "/images/avatars/avatar4.jpg",
     name: "Jill Chen",
-    role: "Business Development Lead, Cladify",
+    role: "Business Development Manager, Cladify",
   },
   {
     stars: 5,
