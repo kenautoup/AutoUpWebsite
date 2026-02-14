@@ -2,7 +2,7 @@ import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ArrowRight, Star } from "lucide-react";
 import instantlyLogo from "@assets/instantly_1771035044332.png";
-import diverseLogoWhite from "@assets/diverse-logo-white_1771041955595.png";
+import diverseLogoWhite from "@assets/diverse-full-logo-white_1771042214618.png";
 import reggoraLogoWhite from "@assets/reggora-logo-white_1771041955595.png";
 
 function CaseStudyCard({
