@@ -4,7 +4,6 @@ import { Press } from "@/components/sections/Press";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FeaturedResults } from "@/components/sections/FeaturedResults";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { Certifications } from "@/components/sections/Certifications";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 
@@ -18,7 +17,6 @@ export default function Home() {
         <HowItWorks />
         <FeaturedResults />
         <Testimonials />
-        <Certifications />
         <CTA />
       </main>
       <Footer />
