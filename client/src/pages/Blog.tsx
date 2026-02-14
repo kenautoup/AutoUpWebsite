@@ -1,7 +1,7 @@
 import { Link } from "wouter";
-import { ArrowRight, ArrowLeft, Clock, User } from "lucide-react";
+import { ArrowUpRight, Clock, User } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
-import logoBlackImg from "@assets/autoupblack.png";
+import { Navigation } from "@/components/sections/Navigation";
 
 const blogPosts = [
   {
@@ -12,7 +12,6 @@ const blogPosts = [
     readTime: "8 min read",
     author: "Ken at AutoUp",
     date: "Feb 10, 2025",
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&q=80",
   },
   {
     slug: "b2b-lead-generation-ai",
@@ -22,7 +21,6 @@ const blogPosts = [
     readTime: "6 min read",
     author: "Ken at AutoUp",
     date: "Jan 28, 2025",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
   },
   {
     slug: "outbound-vs-inbound-sales",
@@ -32,7 +30,6 @@ const blogPosts = [
     readTime: "5 min read",
     author: "Ken at AutoUp",
     date: "Jan 15, 2025",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
   },
   {
     slug: "linkedin-outreach-playbook",
@@ -42,7 +39,6 @@ const blogPosts = [
     readTime: "7 min read",
     author: "Ken at AutoUp",
     date: "Jan 2, 2025",
-    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=800&q=80",
   },
   {
     slug: "email-copywriting-frameworks",
@@ -52,7 +48,6 @@ const blogPosts = [
     readTime: "6 min read",
     author: "Ken at AutoUp",
     date: "Dec 18, 2024",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80",
   },
   {
     slug: "scaling-outreach-without-spam",
@@ -62,7 +57,6 @@ const blogPosts = [
     readTime: "9 min read",
     author: "Ken at AutoUp",
     date: "Dec 5, 2024",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
   },
 ];
 
@@ -77,18 +71,9 @@ const categoryColors: Record<string, string> = {
 export default function Blog() {
   return (
     <div className="min-h-screen bg-white">
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4">
-        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <Link href="/" className="flex items-center group">
-            <img src={logoBlackImg} alt="AutoUp" className="h-8 w-auto transition-transform group-hover:scale-105" />
-          </Link>
-          <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">
-            <ArrowLeft className="w-4 h-4" /> Back to Home
-          </Link>
-        </div>
-      </nav>
+      <Navigation />
 
-      <header className="pt-16 pb-12 border-b border-gray-100">
+      <header className="pt-32 pb-12 border-b border-gray-100">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <Reveal>
             <span className="text-sm font-bold uppercase tracking-widest text-teal mb-4 block">AutoUp Blog</span>
@@ -116,13 +101,6 @@ export default function Blog() {
                   className="group flex flex-col h-full bg-white rounded-lg border border-gray-100 overflow-visible hover-elevate transition-all"
                   data-testid={`blog-card-${post.slug}`}
                 >
-                  <div className="aspect-[16/10] overflow-hidden rounded-t-lg">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-3 mb-3">
                       <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[post.category] || "bg-gray-50 text-gray-700"}`}>
@@ -138,7 +116,7 @@ export default function Blog() {
                     <p className="text-sm text-gray-500 mb-4 flex-1 leading-relaxed">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-50">
+                    <div className="flex items-center justify-between gap-2 flex-wrap pt-4 border-t border-gray-50">
                       <div className="flex items-center gap-2 text-xs text-gray-400">
                         <User className="w-3 h-3" />
                         {post.author}
@@ -149,6 +127,21 @@ export default function Blog() {
                 </Link>
               </Reveal>
             ))}
+          </div>
+
+          <div className="text-center mt-20 mb-8">
+            <Reveal>
+              <p className="text-lg text-gray-500 mb-6">Want results like these?</p>
+              <a
+                href="https://calendly.com/ken-autoup/autoup-introduction"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-teal hover:bg-[#00dced] text-navy font-bold text-lg px-10 py-[18px] rounded-xl transition-all duration-200 ease-out shadow-[0_2px_12px_rgba(0,201,219,0.2)] hover:shadow-[0_6px_24px_rgba(14,211,207,0.35)]"
+                data-testid="link-blog-cta"
+              >
+                Book Intro Call <ArrowUpRight className="w-5 h-5" />
+              </a>
+            </Reveal>
           </div>
         </div>
       </main>
