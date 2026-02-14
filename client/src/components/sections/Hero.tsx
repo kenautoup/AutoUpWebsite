@@ -59,7 +59,7 @@ export function Hero() {
                 ))}
               </div>
               <span className="text-[#64748b] text-sm font-medium group-hover:text-[#1e293b] transition-colors">
-                <span className="font-bold text-[#1e293b]">200+</span> companies on the system
+                Trusted by <span className="font-bold text-[#1e293b]">200+</span> companies
               </span>
             </a>
           </div>
