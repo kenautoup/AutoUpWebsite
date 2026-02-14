@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ArrowRight } from "lucide-react";
-import instantlyLogo from "@assets/instantlyexpert_1770991537677.png";
+import instantlyLogo from "@assets/instantly_1771035044332.png";
 
 export function FeaturedResults() {
   return (
