@@ -5,6 +5,7 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Comparison } from "@/components/sections/Comparison";
 import { EmailShowcase } from "@/components/sections/EmailShowcase";
 import { Process } from "@/components/sections/Process";
+import { FeaturedResults } from "@/components/sections/FeaturedResults";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Certifications } from "@/components/sections/Certifications";
 import { CTA } from "@/components/sections/CTA";
@@ -21,6 +22,7 @@ export default function Home() {
         <Comparison />
         <EmailShowcase />
         <Process />
+        <FeaturedResults />
         <Testimonials />
         <Certifications />
         <CTA />
