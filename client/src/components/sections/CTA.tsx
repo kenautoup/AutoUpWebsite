@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/section";
 
 export function CTA() {
   return (
-    <Section className="bg-navy relative">
+    <Section className="bg-navy relative" data-theme="dark">
       <div className="absolute inset-0 bg-gradient-to-t from-teal/10 to-transparent pointer-events-none" />
       
       <div className="text-center max-w-4xl mx-auto relative z-10">
@@ -21,6 +21,7 @@ export function CTA() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-teal hover:bg-teal-dark text-navy font-bold text-xl px-10 py-5 rounded-xl transition-all shadow-[0_4px_24px_rgba(0,201,219,0.25)] hover:shadow-[0_8px_36px_rgba(0,201,219,0.4)] hover:-translate-y-1 mb-6"
+            data-testid="link-cta-schedule"
           >
             Schedule a Call <ArrowRight className="w-6 h-6" />
           </a>

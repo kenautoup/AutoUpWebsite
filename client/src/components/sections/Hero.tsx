@@ -1,4 +1,4 @@
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import instantlyLogo from "@assets/instantlyexpert_1770991537677.png";
 
@@ -13,14 +13,14 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] font-sans text-gray-900">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] font-sans text-[#1e293b]">
             We Build the Pipeline.<br />
-            <em className="text-teal italic">You Close the Deals.</em>
+            <em>You Close the Deals.</em>
           </h1>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="text-[20px] md:text-[22px] text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-2xl mx-auto mb-10 leading-relaxed">
             AI-powered data extraction, expert copywriting, and automated outbound campaigns — personalized at scale, managed end-to-end.
           </p>
         </Reveal>
@@ -32,10 +32,11 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#3570E0] text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(69,128,247,0.3)] hover:shadow-[0_8px_30px_rgba(69,128,247,0.4)] hover:-translate-y-1"
+              data-testid="link-hero-cta"
             >
               Book a Strategy Call <ArrowRight className="w-5 h-5" />
             </a>
-            <div className="text-sm text-gray-400 font-medium">
+            <div className="text-sm text-[#8a9bb0] font-medium">
               Free 30-minute consultation · No commitment
             </div>
             <a
@@ -57,23 +58,23 @@ export function Hero() {
                   />
                 ))}
               </div>
-              <span className="text-gray-600 text-sm font-medium group-hover:text-gray-900 transition-colors">
-                Trusted by <span className="font-bold text-gray-900">200+</span> companies
+              <span className="text-[#64748b] text-sm font-medium group-hover:text-[#1e293b] transition-colors">
+                Trusted by <span className="font-bold text-[#1e293b]">200+</span> companies
               </span>
             </a>
           </div>
         </Reveal>
 
         <Reveal delay={0.4}>
-          <div className="mt-20 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-gray-200 pt-12">
+          <div className="mt-20 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[#eef1f5] pt-12">
             {[
               { label: "Emails Sent / Month", value: "5M+" },
               { label: "Positive Replies / Month", value: "10K+" },
               { label: "Fortune 500 Meetings Booked", value: "250+" },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
-                <div className="text-[40px] md:text-[48px] font-bold text-gray-900 tracking-tight leading-none">{stat.value}</div>
-                <div className="text-[14px] md:text-[15px] font-medium text-gray-400 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-[40px] md:text-[48px] font-bold text-[#1e293b] tracking-tight leading-none">{stat.value}</div>
+                <div className="text-[14px] md:text-[15px] font-medium text-[#8a9bb0] uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>

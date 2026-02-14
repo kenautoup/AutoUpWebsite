@@ -1,0 +1,85 @@
+# AutoUp Landing Page Redesign — Replit Implementation Prompt
+
+## Overview
+
+Redesign the AutoUp landing page to shift from a mostly-dark theme to a **mostly-light theme**, reserving dark backgrounds for only two high-impact sections: the Featured Results (case studies) and the final CTA. All other sections should use white or light gray backgrounds.
+
+The goal is to reduce visual heaviness, improve scannability, and create better contrast so the dark sections hit harder as exceptions rather than the rule. All existing content, copy, structure, and section order should be preserved exactly — this is a color/background rework, not a content change.
+
+---
+
+## Section-by-Section Background Changes
+
+### Sections that should become LIGHT (white or light gray #f7f8fa):
+
+1. **Navbar** — White/translucent with backdrop blur, light bottom border. Should work visually as user scrolls through both light and dark sections.
+
+2. **Hero** — White background. Everything else stays the same (Instantly badge, headline with cyan italic accent, subtext, CTA button, avatar stack/trust line).
+
+3. **Stats bar** (5M+ / 10K+ / 250+) — White background with a subtle bottom border. Stat numbers in dark gray/charcoal instead of white.
+
+4. **Client Press logos** — Light gray (#f7f8fa) background. Logo images/text should remain in a muted gray tone. This section reads much better on light since most press logos are already dark marks.
+
+5. **"Why AutoUp" section** (3 pillars: Your Data, Copy That Sounds Human, Proprietary Infrastructure) — White background. Cards should be light gray (#f7f8fa) with subtle borders. Icon containers keep the cyan tint.
+
+6. **"#1 — Data" comparison section** — Light gray background. The "Typical Agencies" card should be white with a light border. The "AutoUp" card should be the ONE exception here — keep it dark (#0c1b2e) with cyan checkmarks so it stands out as the winning option against the light page.
+
+7. **"#2 — Copy" email comparison** — White background. Both email mockup cards should be white with light borders and the macOS-style colored dots in the top bar. The red/green flag banners at the bottom of each email stay as-is.
+
+8. **"#3 — Process" section** (Discovery / Execution / Iteration) — Light gray background. Step cards white with subtle borders. Numbered circles keep the cyan border.
+
+9. **Testimonials section** (Patrick Burkholder, Randall Floyd, Jill Chen) — White background. Testimonial cards in light gray with subtle borders. Star ratings stay cyan. The "Endorsed by the best — Instantly.ai Certified Expert" badge at the bottom stays as a subtle pill.
+
+### Sections that should STAY DARK (#0c1b2e):
+
+10. **"Featured Results" section** — This is the big proof section. Keep the full dark background for: the Instantly banner card, the Diverse case study card (7,500+ cyan number), and the Reggora case study card (1,000+ cyan number). The cyan gradient numbers, quote bars, and star ratings should all remain as-is. This section pops much harder now that it's surrounded by light.
+
+11. **Final CTA section** ("Ready to 10x your pipeline?") — Dark background with the subtle radial cyan glow at the bottom. Cyan CTA button, green "Currently accepting new clients" dot.
+
+12. **Footer** — Dark, minimal. Stays as-is.
+
+---
+
+## Color System
+
+- **Light backgrounds:** White (#ffffff) and light gray (#f7f8fa)
+- **Borders on light:** #eef1f5
+- **Dark backgrounds (results + CTA only):** #0c1b2e
+- **Dark card backgrounds:** #0f2236
+- **Primary accent:** Cyan #0ed3cf (same as current)
+- **Text on light:** Charcoal #1e293b for headings, #64748b for body, #8a9bb0 for labels
+- **Text on dark:** White for headings, rgba(255,255,255,0.5) for body
+- **Section tags:** Cyan uppercase, same treatment everywhere
+- **Headline italic accent:** Cyan, uses a serif italic (currently the site uses an italic style for the accent phrases like "You Close the Deals", "B2B Pipeline", "Not Scraped & Prayed", "Like It Came From You", "Relentless", "It Works", "Real Results", "10x your pipeline")
+
+---
+
+## Typography
+
+Keep the existing font pairing. The site currently uses a clean sans-serif for body and a serif/italic for headline accents. Don't change fonts — just update the text colors to work on light backgrounds instead of dark.
+
+---
+
+## Important Details
+
+- The **nav** needs to work across both light and dark scroll positions. A white/frosted glass nav with backdrop-filter: blur and a light bottom border handles this well.
+- The **comparison cards** in the Data section: the "Typical Agencies" card goes light (white bg, light border, gray text, red X icons), the "AutoUp" card stays dark (dark bg, cyan border, white text, cyan check icons). This contrast sells the comparison.
+- **Email mockup cards** in the Copy section should both be white with the colored dot toolbar and light borders, matching the light page context.
+- **Hover states** on cards: subtle border darkening + light box shadow + slight translateY(-2px).
+- **Stats numbers** (5M+, 10K+, 250+) should be dark charcoal text on the light background, not the cyan gradient treatment (save that for the case study numbers on dark).
+- All **cyan accents** (section tags, headline italics, icons, CTA buttons, star ratings) stay exactly the same.
+- The **"Endorsed by the best" badge** near the testimonials should be a subtle pill with light gray background and border.
+
+---
+
+## What NOT to Change
+
+- Do not change any copy or text content
+- Do not change the section order
+- Do not change the layout or grid structure of any section
+- Do not change the Instantly banner design (it lives inside the dark results section)
+- Do not change the case study card design (they live inside the dark results section)
+- Do not change the CTA section design
+- Do not change the footer
+- Do not remove any sections or elements
+- Keep all existing animations, hover states, and interactive elements

@@ -13,7 +13,7 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-navy text-white selection:bg-teal/30 selection:text-teal-50">
+    <div className="min-h-screen bg-white selection:bg-teal/30 selection:text-teal-50">
       <Navigation />
       <main>
         <Hero />

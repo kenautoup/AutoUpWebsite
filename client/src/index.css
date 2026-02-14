@@ -36,10 +36,18 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 187 100% 43%;
+
+    /* Light section palette */
+    --light-bg: #ffffff;
+    --light-bg-alt: #f7f8fa;
+    --light-border: #eef1f5;
+    --light-heading: #1e293b;
+    --light-body: #64748b;
+    --light-label: #8a9bb0;
   }
 
   body {
-    @apply bg-navy text-white antialiased font-sans;
+    @apply bg-white text-[#1e293b] antialiased font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
