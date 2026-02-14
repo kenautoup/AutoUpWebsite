@@ -1,12 +1,11 @@
-import { ReactNode } from "react";
+import { ReactNode, HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
-interface SectionProps {
+interface SectionProps extends HTMLAttributes<HTMLElement> {
   id?: string;
   className?: string;
   children: ReactNode;
-  "aria-label"?: string;
-  "aria-labelledby"?: string;
+  "data-theme"?: string;
 }
 
 export function Section({ id, className, children, ...props }: SectionProps) {
