@@ -2,7 +2,6 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Press } from "@/components/sections/Press";
 import { HowItWorks } from "@/components/sections/HowItWorks";
-import { WhyItWorks } from "@/components/sections/WhyItWorks";
 import { FeaturedResults } from "@/components/sections/FeaturedResults";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Certifications } from "@/components/sections/Certifications";
@@ -17,7 +16,6 @@ export default function Home() {
         <Hero />
         <Press />
         <HowItWorks />
-        <WhyItWorks />
         <FeaturedResults />
         <Testimonials />
         <Certifications />
