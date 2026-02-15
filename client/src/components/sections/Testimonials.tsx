@@ -62,6 +62,14 @@ const testimonials = [
   },
   {
     stars: 5,
+    quote: "Kenny's growth initiatives allowed us to get in front of the right customers at the right time. He is master at understanding the customer's needs and for us this was priceless. We were able to close 68 more deals in a 6 week period directly from his outreach efforts.",
+    initials: "DC",
+    photo: "/images/avatars/daniellacastro.jpeg",
+    name: "Daniella Castro",
+    role: "Director of Sales & Agent Success, Knock ($900M raised)",
+  },
+  {
+    stars: 5,
     quote: "AutoUp allowed us to rethink our business development structure entirely. They amplified our outreach in a cost-effective way we didn't know was possible.",
     initials: "GG",
     photo: "/images/avatars/grantgordon.png",
