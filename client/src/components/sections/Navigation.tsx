@@ -34,6 +34,7 @@ export function Navigation() {
     { name: "How It Works", href: "#how-it-works" },
     { name: "Results", href: "#results" },
     { name: "Testimonials", href: "#testimonials" },
+    { name: "FAQ", href: "#faq" },
     { name: "Blog", href: "/blog", external: false },
   ];
 

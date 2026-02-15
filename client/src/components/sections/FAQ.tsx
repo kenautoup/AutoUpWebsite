@@ -38,7 +38,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <Section className="bg-white py-16 md:py-24">
+    <Section id="faq" className="bg-white py-16 md:py-24">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <Reveal>
           <span className="text-[13px] font-bold uppercase tracking-[3px] text-teal mb-4 block">FAQ</span>
