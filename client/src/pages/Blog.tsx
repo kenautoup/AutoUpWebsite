@@ -73,23 +73,24 @@ export default function Blog() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <header className="pt-32 pb-12 border-b border-gray-100">
+      <section className="pt-36 pb-16 md:pt-40 md:pb-24 overflow-hidden relative bg-white">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <Reveal>
-            <span className="text-sm font-bold uppercase tracking-widest text-teal mb-4 block">AutoUp Blog</span>
+            <span className="text-[13px] font-bold uppercase tracking-[3px] text-teal mb-6 block">The AutoUp System</span>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-sans">
-              Outreach Strategies That Work
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1] font-sans text-[#1e293b]">
+              10,000+ Positive Replies.<br />
+              <em className="text-teal">Every Month.</em>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Actionable insights on cold email, lead generation, and scaling your B2B pipeline.
+            <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-[540px] mx-auto mb-8 leading-relaxed">
+              The strategies, frameworks, and insights behind the system.
             </p>
           </Reveal>
         </div>
-      </header>
+      </section>
 
       <main className="py-16">
         <div className="container mx-auto px-4 md:px-6">
