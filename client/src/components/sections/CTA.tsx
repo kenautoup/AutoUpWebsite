@@ -16,7 +16,7 @@ export function CTA() {
           >
             <h2 className="font-serif italic text-3xl md:text-5xl lg:text-[56px] leading-[1.15] font-bold text-navy mb-6 mx-auto">
               You Don't Need More Outbound.<br />
-              You Need More <span className="text-teal">Qualified Replies.</span>
+              You Need More <span className="text-teal">Positive Replies.</span>
             </h2>
 
             <p className="text-[17px] md:text-[19px] text-[#64748b] max-w-2xl mx-auto mb-10 leading-relaxed">
