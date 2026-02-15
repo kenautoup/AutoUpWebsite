@@ -162,7 +162,7 @@ export function FeaturedResults() {
               metricLabel="Positive Replies / Month"
               timeframe="Achieved in 90 days"
               company="Reggora"
-              industry="Proptech · Series B"
+              industry="Series B - $60M Raised"
               quote="AutoUp built the entire outbound engine from scratch. The results speak for themselves."
               authorName="Brian Zitin"
               authorTitle="CEO, Reggora"
