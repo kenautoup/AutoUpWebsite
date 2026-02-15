@@ -6,7 +6,7 @@ import { Section } from "@/components/ui/section";
 const faqs = [
   {
     question: "What's the minimum commitment?",
-    answer: "We operate on a month-to-month basis with no long-term contracts required. Most clients stay because the results speak for themselves, but you're never locked in.",
+    answer: "We typically ask for a three-month commitment — that gives us enough volume and runway to prove the system works. After that, it's month-to-month. If you'd rather own the system yourself, we also offer standalone build-outs that can be done in as little as one to two months.",
   },
   {
     question: "How long does onboarding take?",
