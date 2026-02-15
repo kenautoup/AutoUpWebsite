@@ -73,7 +73,7 @@ export default function Blog() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <section className="pt-36 pb-16 md:pt-40 md:pb-24 overflow-hidden relative bg-white">
+      <section className="pt-36 pb-6 md:pt-40 md:pb-8 overflow-hidden relative bg-white">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <Reveal>
             <span className="text-[13px] font-bold uppercase tracking-[3px] text-teal mb-6 block">The AutoUp System</span>
