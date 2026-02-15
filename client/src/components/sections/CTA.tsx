@@ -11,7 +11,7 @@ export function CTA() {
             Ready to <em className="text-teal italic">fill your pipeline?</em>
           </h2>
           <p className="text-[20px] text-white/50 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Book a free strategy call and see what's possible when experts build your outbound engine.
+            Book a free strategy call and see what's possible when a proven system powers your outbound.
           </p>
           
           <a
