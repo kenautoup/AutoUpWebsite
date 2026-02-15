@@ -66,7 +66,7 @@ const testimonials = [
     initials: "DC",
     photo: "/images/avatars/daniellacastro.jpeg",
     name: "Daniella Castro",
-    role: "Director of Sales & Agent Success, Knock ($900M raised)",
+    role: "Director of Sales, Knock ($900M raised)",
   },
   {
     stars: 5,
