@@ -136,7 +136,7 @@ export default function Blog() {
                 href="https://calendly.com/ken-autoup/autoup-introduction"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-teal hover:bg-[#00dced] text-navy font-bold text-lg px-10 py-[18px] rounded-xl transition-all duration-200 ease-out shadow-[0_2px_12px_rgba(0,201,219,0.2)] hover:shadow-[0_6px_24px_rgba(14,211,207,0.35)]"
+                className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#5090FF] text-white font-bold text-lg px-10 py-[18px] rounded-xl transition-all duration-200 ease-out shadow-[0_2px_12px_rgba(69,128,247,0.2)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
                 data-testid="link-blog-cta"
               >
                 Book Intro Call <ArrowUpRight className="w-5 h-5" />
