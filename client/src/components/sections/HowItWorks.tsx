@@ -36,7 +36,7 @@ export function HowItWorks() {
       <Reveal delay={0.15}>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div
-            className="bg-[#F5F6F7] rounded-xl p-8 md:p-10"
+            className="bg-[#E8E9EB] rounded-xl p-8 md:p-10"
             data-testid="card-old-way"
           >
             <div className="text-[13px] font-bold uppercase tracking-[2px] text-[#8a9bb0] mb-8">The Old Way</div>
