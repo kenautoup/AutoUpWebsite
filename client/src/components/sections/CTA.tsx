@@ -4,9 +4,9 @@ import { Section } from "@/components/ui/section";
 
 export function CTA() {
   return (
-    <Section className="bg-white py-20 md:py-28">
+    <Section className="bg-white py-8 md:py-12">
       <Reveal>
-        <div className="max-w-5xl mx-auto px-4 md:px-6">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div
             className="rounded-2xl px-8 py-16 md:px-16 md:py-20 text-center"
             style={{
@@ -14,9 +14,9 @@ export function CTA() {
             }}
             data-testid="card-cta"
           >
-            <h2 className="font-serif italic text-3xl md:text-5xl lg:text-[56px] leading-[1.15] font-bold text-[#1e293b] mb-6 max-w-3xl mx-auto">
+            <h2 className="font-serif italic text-3xl md:text-5xl lg:text-[56px] leading-[1.15] font-bold text-navy mb-6 mx-auto">
               You Don't Need More Outbound.<br />
-              You Need More Qualified Replies.
+              You Need More <span className="text-teal">Qualified Replies.</span>
             </h2>
 
             <p className="text-[17px] md:text-[19px] text-[#64748b] max-w-2xl mx-auto mb-10 leading-relaxed">
