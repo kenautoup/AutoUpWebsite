@@ -76,15 +76,15 @@ function CaseStudyCard({
 
       <div className="flex items-center gap-3 mt-auto">
         {authorImage ? (
-          <img src={authorImage} alt={authorName} className="w-9 h-9 rounded-full object-cover" />
+          <img src={authorImage} alt={authorName} className="w-12 h-12 rounded-full object-cover" />
         ) : (
-          <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-gray-400 font-sans">
+          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-sm font-bold text-gray-400 font-sans">
             {authorName.split(" ").map((n) => n[0]).join("")}
           </div>
         )}
         <div className="text-left">
-          <div className="text-[16px] text-white font-sans font-medium">{authorName}</div>
-          <div className="text-[13px] text-gray-500">{authorTitle}</div>
+          <div className="text-[18px] text-white font-sans font-medium">{authorName}</div>
+          <div className="text-[14px] text-gray-500">{authorTitle}</div>
         </div>
       </div>
     </div>
