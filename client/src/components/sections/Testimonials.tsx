@@ -18,7 +18,7 @@ const testimonials = [
     initials: "PB",
     photo: "/images/avatars/avatar1.jpg",
     name: "Patrick Burkholder",
-    role: "VP of Sales, MavenAI ($34M raised)",
+    role: "VP of Sales, Rentable ($34M raised)",
   },
   {
     stars: 5,
