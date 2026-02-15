@@ -8,7 +8,7 @@ export function CTA() {
       <div className="text-center max-w-4xl mx-auto">
         <Reveal>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-            Ready to <em className="text-teal italic">10x your pipeline?</em>
+            Ready to <em className="text-teal italic">fill your pipeline on autopilot?</em>
           </h2>
           <p className="text-[20px] text-white/50 mb-10 max-w-2xl mx-auto leading-relaxed">
             Book a free strategy call and see what's possible when experts build your outbound engine.
