@@ -5,7 +5,7 @@ import { Section } from "@/components/ui/section";
 
 const faqs = [
   {
-    question: "What's the minimum commitment?",
+    question: "What is the minimum monthly commitment?",
     answer: "We typically ask for a three-month commitment — that gives us enough volume and runway to prove the system works. After that, it's month-to-month. If you'd rather own the system yourself, we also offer standalone build-outs that can be done in as little as one to two months.",
   },
   {
