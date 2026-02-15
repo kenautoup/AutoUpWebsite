@@ -155,7 +155,7 @@ export function Testimonials() {
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Client Results</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#1e293b]">
-            Real People. <em>Real Results.</em>
+            Results That <em>Compound.</em>
           </h2>
           <p className="text-[20px] text-[#64748b] leading-relaxed">
             Don't take our word for it — hear from the founders and leaders who've scaled with us.
