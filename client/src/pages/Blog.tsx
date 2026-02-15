@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { ArrowUpRight, Clock, User } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { Navigation } from "@/components/sections/Navigation";
+import { Footer } from "@/components/sections/Footer";
 
 const blogPosts = [
   {
@@ -147,11 +148,7 @@ export default function Blog() {
         </div>
       </main>
 
-      <footer className="border-t border-gray-100 py-8">
-        <div className="container mx-auto px-4 md:px-6 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} AutoUp. All rights reserved.
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
