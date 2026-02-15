@@ -158,7 +158,7 @@ export function Testimonials() {
   };
 
   return (
-    <Section id="testimonials" className="bg-white overflow-hidden">
+    <Section id="testimonials" className="bg-white overflow-hidden pb-8 md:pb-10">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Client Results</div>
