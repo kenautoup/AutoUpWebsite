@@ -10,7 +10,7 @@ const testimonials = [
     initials: "RP",
     photo: "/images/avatars/pleeth.png",
     name: "Rich Pleeth",
-    role: "Co-founder & CEO, fin",
+    role: "Co-founder & CEO, Finmile",
   },
   {
     stars: 5,
