@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-navy-deep border-t border-white/5 py-12" data-theme="dark">
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center gap-5">
         <Link href="/" className="group">
-          <img src={logoImg} alt="AutoUp" className="h-12 w-auto transition-transform group-hover:scale-105" />
+          <img src={logoImg} alt="AutoUp" className="h-9 w-auto transition-transform group-hover:scale-105" />
         </Link>
         
         <div className="flex items-center gap-6">
