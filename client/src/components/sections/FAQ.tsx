@@ -9,6 +9,10 @@ const faqs = [
     answer: "We typically ask for a three-month commitment — that gives us enough volume and runway to prove the system works. After that, it's month-to-month. If you'd rather own the system yourself, we also offer standalone build-outs that can be done in as little as one to two months.",
   },
   {
+    question: "How does pricing work?",
+    answer: "Pricing is tailored to your specific setup. The two biggest factors are volume — how many emails you want to send and how aggressively you want to scale — and the complexity of the motion, i.e., whether we're doing advanced data scraping, intensive AI personalization, or building out multi-step GTM workflows. Every system is different, so every price is bespoke.",
+  },
+  {
     question: "How long does onboarding take?",
     answer: "Onboarding typically takes 5–7 business days. We'll set up your infrastructure, build your prospect lists, and craft your messaging — so campaigns launch quickly and correctly.",
   },
