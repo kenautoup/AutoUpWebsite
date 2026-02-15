@@ -20,7 +20,7 @@ export function CTA() {
             </h2>
 
             <p className="text-[17px] md:text-[19px] text-[#64748b] max-w-2xl mx-auto mb-10 leading-relaxed">
-              We've sent 20M+ cold emails this year. Ranked #2 out of 90,000 Smartlead users. Let's turn cold outreach into booked revenue.
+              We've sent 35M+ cold emails last year. Instantly.ai Certified Experts. Clients on all continents.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
