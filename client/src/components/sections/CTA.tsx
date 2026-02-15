@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/section";
 
 export function CTA() {
   return (
-    <Section className="bg-white py-8 md:py-12">
+    <Section className="bg-white pt-8 pb-20 md:pt-12 md:pb-28">
       <Reveal>
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div
