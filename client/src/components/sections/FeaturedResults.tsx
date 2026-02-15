@@ -145,7 +145,7 @@ export function FeaturedResults() {
               metricLabel="Positive Replies / Month"
               timeframe="Achieved in 6 months"
               company="Diverse"
-              industry="Growth Services · #128 Inc. 5000"
+              industry="Inc. 5000 - #128"
               quote="Working with AutoUp transformed our outbound — the volume and quality of replies is unlike anything we've seen."
               authorName="Tim Dean"
               authorTitle="Owner, Diverse"
