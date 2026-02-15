@@ -4,6 +4,7 @@ import { ArrowRight, Star } from "lucide-react";
 import instantlyLogo from "@assets/instantly_1771035044332.png";
 import diverseLogoWhite from "@assets/diverse-full-logo-white_1771042214618.png";
 import reggoraLogoWhite from "@assets/reggora-logo-white_1771041955595.png";
+import timDeanPhoto from "@assets/tim_dean.jpg";
 
 function CaseStudyCard({
   metric,
@@ -14,6 +15,7 @@ function CaseStudyCard({
   quote,
   authorName,
   authorTitle,
+  authorImage,
   testId,
   logo,
   logoHeight = "h-9",
@@ -26,6 +28,7 @@ function CaseStudyCard({
   quote: string;
   authorName: string;
   authorTitle: string;
+  authorImage?: string;
   testId: string;
   logo?: string;
   logoHeight?: string;
@@ -72,9 +75,13 @@ function CaseStudyCard({
       </div>
 
       <div className="flex items-center gap-3 mt-auto">
-        <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-gray-400 font-sans">
-          {authorName.split(" ").map((n) => n[0]).join("")}
-        </div>
+        {authorImage ? (
+          <img src={authorImage} alt={authorName} className="w-9 h-9 rounded-full object-cover" />
+        ) : (
+          <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-gray-400 font-sans">
+            {authorName.split(" ").map((n) => n[0]).join("")}
+          </div>
+        )}
         <div className="text-left">
           <div className="text-[16px] text-white font-sans font-medium">{authorName}</div>
           <div className="text-[13px] text-gray-500">{authorTitle}</div>
@@ -139,8 +146,9 @@ export function FeaturedResults() {
               company="Diverse"
               industry="Growth Services · #128 Inc. 5000"
               quote="Working with AutoUp transformed our outbound — the volume and quality of replies is unlike anything we've seen."
-              authorName="Client Partner"
-              authorTitle="VP of Growth, Diverse"
+              authorName="Tim Dean"
+              authorTitle="Owner, Diverse"
+              authorImage={timDeanPhoto}
               testId="card-case-diverse"
               logo={diverseLogoWhite}
               logoHeight="h-[42px]"
