@@ -74,7 +74,7 @@ const testimonials = [
     initials: "KG",
     photo: "/images/avatars/kemaedeguzman.png",
     name: "Kemae de Guzman",
-    role: "Project Manager, SourcePad",
+    role: "Project Manager, SourcePad (Acquired)",
   },
 ];
 
