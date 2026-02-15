@@ -10,7 +10,7 @@ const testimonials = [
     initials: "RP",
     photo: "/images/avatars/pleeth.png",
     name: "Rich Pleeth",
-    role: "Co-founder & CEO, Finmile",
+    role: "Co-founder & CEO, Finmile ($7M raised)",
   },
   {
     stars: 5,
@@ -18,7 +18,7 @@ const testimonials = [
     initials: "PB",
     photo: "/images/avatars/avatar1.jpg",
     name: "Patrick Burkholder",
-    role: "VP of Sales, MavenAI",
+    role: "VP of Sales, MavenAI ($34M raised)",
   },
   {
     stars: 5,
@@ -42,7 +42,7 @@ const testimonials = [
     initials: "DB",
     photo: "/images/avatars/dougbertram.png",
     name: "Doug Bertram",
-    role: "CEO, Structural Elements",
+    role: "CEO, Structural Elements ($11M raised)",
   },
   {
     stars: 5,
