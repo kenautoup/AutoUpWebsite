@@ -29,7 +29,7 @@ export function Press() {
               key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              style={{ filter: "grayscale(100%)" }}
+              style={{ filter: "grayscale(100%) brightness(1.5) contrast(0.4)" }}
               className={`${(logo as any).sizeClass ? (logo as any).sizeClass : (logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
               data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
