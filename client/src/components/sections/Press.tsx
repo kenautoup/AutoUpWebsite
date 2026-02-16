@@ -1,16 +1,14 @@
-import tcLogoPath from "@assets/techcrunchlogo_1771039496189.webp";
-
 export function Press() {
   const logos = [
-    { name: "NYT", src: "/images/press/nyt.png", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "WSJ", src: "/images/press/wsj.png", isSvg: false, smaller: true },
-    { name: "TechCrunch", src: tcLogoPath, isSvg: false, sizeClass: "h-[60px] md:h-[84px]" },
-    { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
-    { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
-    { name: "HBR", src: "/images/press/hbr.png", isSvg: false },
-    { name: "WaPo", src: "/images/press/wapo.png", isSvg: false },
-    { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "Inc5000", src: "/images/press/inc5000.png", isSvg: false, smaller: true },
+    { name: "NYT", src: "/images/press/nyt.png", sizeClass: "h-[108px] md:h-[151px]" },
+    { name: "WSJ", src: "/images/press/wsj.png", smaller: true },
+    { name: "TechCrunch", src: "/images/press/techcrunch.svg", sizeClass: "h-[60px] md:h-[84px]" },
+    { name: "Forbes", src: "/images/press/forbes.png" },
+    { name: "Bloomberg", src: "/images/press/bloomberg.png" },
+    { name: "HBR", src: "/images/press/hbr.svg" },
+    { name: "WaPo", src: "/images/press/wapo.png" },
+    { name: "Entrepreneur", src: "/images/press/entrepreneur.png", sizeClass: "h-[108px] md:h-[151px]" },
+    { name: "Inc5000", src: "/images/press/inc5000.svg", smaller: true },
   ];
 
   const doubled = [...logos, ...logos];
@@ -29,8 +27,8 @@ export function Press() {
               key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              style={{ filter: "grayscale(100%) brightness(1.5) contrast(0.4)" }}
-              className={`${(logo as any).sizeClass ? (logo as any).sizeClass : (logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
+              style={{ filter: "grayscale(100%)" }}
+              className={`${logo.sizeClass ? logo.sizeClass : logo.smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
               data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
             />
           ))}
