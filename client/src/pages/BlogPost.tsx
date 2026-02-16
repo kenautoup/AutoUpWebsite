@@ -200,11 +200,11 @@ export default function BlogPost() {
 
           <hr className="border-0 border-t border-[#e0e0e0] mt-[80px] mb-[40px]" />
 
-          <div className="mb-[80px]">
+          <div className="mb-12">
             <BlogCTA />
           </div>
 
-          <div className="mt-12 flex items-center justify-between gap-4 pt-8 border-t border-gray-100">
+          <div className="flex items-center justify-between gap-4">
             {adjacent.prev ? (
               <Link
                 href={`/blog/${adjacent.prev.slug}`}
