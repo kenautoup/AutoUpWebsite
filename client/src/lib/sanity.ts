@@ -1,8 +1,13 @@
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 
+const projectId = import.meta.env.VITE_SANITY_PROJECT_ID;
+if (!projectId) {
+  console.warn("VITE_SANITY_PROJECT_ID is not set. Blog content will not load from Sanity.");
+}
+
 export const sanityClient = createClient({
-  projectId: import.meta.env.VITE_SANITY_PROJECT_ID || "YOUR_PROJECT_ID",
+  projectId: projectId || "placeholder",
   dataset: "production",
   apiVersion: "2024-01-01",
   useCdn: true,

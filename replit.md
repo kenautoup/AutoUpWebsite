@@ -56,9 +56,16 @@ Preferred communication style: Simple, everyday language.
 ### Third-Party Services
 - **Calendly** — External scheduling links (hardcoded URLs pointing to `calendly.com/ken-autoup/autoup-introduction`)
 - **Google Fonts** — Inter and Playfair Display font families loaded via CDN
+- **Sanity CMS** — Headless CMS powering the blog. Content managed at `https://autoup.sanity.studio`. Uses GROQ queries to fetch posts, categories, and authors. Requires `VITE_SANITY_PROJECT_ID` (frontend) and `SANITY_PROJECT_ID` (server-side sitemap) environment variables. Schemas defined in `sanity/schemas/` (post, category, author). Client config in `client/src/lib/sanity.ts`, queries in `client/src/lib/sanityQueries.ts`.
+
+### Blog Architecture (Sanity-powered)
+- **Blog Index** (`client/src/pages/Blog.tsx`) — Fetches all posts from Sanity via `getAllPosts()`, renders card grid with loading skeleton
+- **Blog Post** (`client/src/pages/BlogPost.tsx`) — Fetches single post by slug via `getPostBySlug()`, renders Portable Text body with `@portabletext/react`, injects Article structured data, shows prev/next navigation via `getAdjacentPosts()`
+- **Sitemap** (`server/routes.ts`) — Dynamically fetches all post slugs from Sanity server-side
+- **Studio Schemas** (`sanity/` directory) — Reference schemas for Sanity Studio deployment (not part of Vite build)
 
 ### Key NPM Packages
-- **Frontend**: React, Wouter, TanStack React Query, Framer Motion, Tailwind CSS, shadcn/ui (Radix UI primitives), Lucide React, class-variance-authority
-- **Backend**: Express 5, Drizzle ORM, drizzle-zod, pg, Zod, connect-pg-simple, express-session
+- **Frontend**: React, Wouter, TanStack React Query, Framer Motion, Tailwind CSS, shadcn/ui (Radix UI primitives), Lucide React, class-variance-authority, @sanity/client, @sanity/image-url, @portabletext/react
+- **Backend**: Express 5, Drizzle ORM, drizzle-zod, pg, Zod, connect-pg-simple, express-session, @sanity/client
 - **Build**: Vite, esbuild, tsx, drizzle-kit
 - **Replit-specific**: `@replit/vite-plugin-runtime-error-modal`, `@replit/vite-plugin-cartographer`, `@replit/vite-plugin-dev-banner`

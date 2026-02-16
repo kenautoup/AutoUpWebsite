@@ -5,8 +5,12 @@ import { api } from "@shared/routes";
 import { z } from "zod";
 import { createClient } from "@sanity/client";
 
+if (!process.env.SANITY_PROJECT_ID) {
+  console.warn("SANITY_PROJECT_ID is not set. Sitemap will not include blog posts from Sanity.");
+}
+
 const sanityServer = createClient({
-  projectId: process.env.SANITY_PROJECT_ID || "YOUR_PROJECT_ID",
+  projectId: process.env.SANITY_PROJECT_ID || "placeholder",
   dataset: "production",
   apiVersion: "2024-01-01",
   useCdn: true,

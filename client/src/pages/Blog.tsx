@@ -50,7 +50,7 @@ export default function Blog() {
             <span className="text-[13px] font-bold uppercase tracking-[3px] text-teal mb-6 block">The AutoUp System</span>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1] font-sans text-[#1e293b]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1] font-sans text-[#1e293b]" data-testid="text-blog-heading">
               10,000+ Positive Replies.<br />
               <em className="text-teal">Every Month.</em>
             </h1>
