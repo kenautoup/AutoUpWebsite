@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowUpRight, Clock, User } from "lucide-react";
+import { Clock, User } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { Navigation } from "@/components/sections/Navigation";
 import { Footer } from "@/components/sections/Footer";
@@ -159,20 +159,6 @@ export default function Blog() {
             </>
           )}
 
-          <div className="text-center mt-20 mb-8">
-            <Reveal>
-              <p className="text-lg text-gray-500 mb-6">Want results like these?</p>
-              <a
-                href="https://calendly.com/ken-autoup/autoup-introduction"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#4580F7] hover:bg-[#5090FF] text-white font-bold text-lg px-10 py-[18px] rounded-xl transition-all duration-200 ease-out shadow-[0_2px_12px_rgba(69,128,247,0.2)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
-                data-testid="link-blog-cta"
-              >
-                Book Intro Call <ArrowUpRight className="w-5 h-5" />
-              </a>
-            </Reveal>
-          </div>
         </div>
       </main>
 
