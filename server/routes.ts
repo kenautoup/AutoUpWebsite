@@ -22,5 +22,46 @@ export async function registerRoutes(
     }
   });
 
+  app.get("/sitemap.xml", (_req, res) => {
+    const baseUrl = "https://autoup.io";
+    const today = new Date().toISOString().split("T")[0];
+
+    const blogSlugs = [
+      "cold-email-deliverability-2025",
+      "b2b-lead-generation-ai",
+      "outbound-vs-inbound-sales",
+      "linkedin-outreach-playbook",
+      "email-copywriting-frameworks",
+      "scaling-outreach-without-spam",
+    ];
+
+    const urls = [
+      { loc: `${baseUrl}/`, changefreq: "weekly", priority: "1.0" },
+      { loc: `${baseUrl}/blog`, changefreq: "weekly", priority: "0.8" },
+      ...blogSlugs.map((slug) => ({
+        loc: `${baseUrl}/blog/${slug}`,
+        changefreq: "monthly" as const,
+        priority: "0.7",
+      })),
+    ];
+
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (u) => `  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>
+  </url>`
+  )
+  .join("\n")}
+</urlset>`;
+
+    res.header("Content-Type", "application/xml");
+    res.send(xml);
+  });
+
   return httpServer;
 }

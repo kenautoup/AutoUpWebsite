@@ -1,0 +1,433 @@
+# SEO Optimization — Main Page (Zero Visual Changes)
+
+Optimize the homepage for search engines without changing any visual appearance, layout, colors, fonts, spacing, or user-facing behavior. Everything below is invisible to visitors — it's all meta tags, semantic HTML, structured data, performance, and crawlability.
+
+---
+
+## 1. `client/index.html` — Meta Tags & Font Cleanup
+
+Replace the entire `<head>` contents with this. The critical change: strip the massive Google Fonts URL (it's loading 25+ font families) down to only Inter and Playfair Display, and add all essential meta/OG tags.
+
+```html
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    
+    <!-- Primary Meta Tags -->
+    <title>AutoUp — Cold Email Outbound System | 10,000+ Positive Replies Every Month</title>
+    <meta name="description" content="AutoUp builds done-for-you cold email outbound systems that generate 10,000+ positive replies every month. AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure trusted by 200+ companies." />
+    <meta name="keywords" content="cold email outbound, B2B lead generation, cold email system, email deliverability, outbound sales, cold email agency, email outreach, B2B pipeline" />
+    <meta name="author" content="AutoUp" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://autoup.io/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://autoup.io/" />
+    <meta property="og:title" content="AutoUp — Cold Email Outbound System | 10,000+ Positive Replies Every Month" />
+    <meta property="og:description" content="AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure — engineered into one outbound system that fills your pipeline on autopilot." />
+    <meta property="og:image" content="https://autoup.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="AutoUp" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://autoup.io/" />
+    <meta name="twitter:title" content="AutoUp — Cold Email Outbound System | 10,000+ Positive Replies Every Month" />
+    <meta name="twitter:description" content="AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure — engineered into one outbound system that fills your pipeline on autopilot." />
+    <meta name="twitter:image" content="https://autoup.io/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <!-- Fonts — ONLY Inter and Playfair Display (was loading 25+ families before) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+</head>
+```
+
+**Important**: Make sure the existing `ogImage.png` from `attached_assets/` gets copied to `client/public/og-image.png` (or generate a proper 1200x630 OG image). Also, change `maximum-scale=1` to `maximum-scale=5` — the old value blocks pinch-to-zoom which is an accessibility violation that Google penalizes.
+
+---
+
+## 2. `client/src/pages/Home.tsx` — Structured Data (JSON-LD)
+
+Add Organization and WebSite structured data to the homepage. Add this inside the component, before the return statement, using a `useEffect` to inject JSON-LD into the document head. This does not change any rendered output.
+
+Add this import at the top:
+```tsx
+import { useEffect } from "react";
+```
+
+Add this inside the `Home` component, before the `return`:
+```tsx
+useEffect(() => {
+    // Organization Schema
+    const orgSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AutoUp",
+      "url": "https://autoup.io",
+      "logo": "https://autoup.io/favicon.png",
+      "description": "AutoUp builds done-for-you cold email outbound systems that generate 10,000+ positive replies every month.",
+      "sameAs": [
+        "https://www.linkedin.com/company/autoup"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://calendly.com/ken-autoup/autoup-introduction"
+      }
+    };
+
+    // WebSite Schema (helps with sitelinks in search)
+    const siteSchema = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AutoUp",
+      "url": "https://autoup.io"
+    };
+
+    // Service Schema
+    const serviceSchema = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AutoUp Cold Email Outbound System",
+      "provider": {
+        "@type": "Organization",
+        "name": "AutoUp"
+      },
+      "description": "Done-for-you cold email outbound system with AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure.",
+      "serviceType": "B2B Lead Generation",
+      "areaServed": "Worldwide"
+    };
+
+    // FAQ Schema (pulls from the FAQ section content)
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum monthly commitment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We typically ask for a three-month commitment — that gives us enough volume and runway to prove the system works. After that, it's month-to-month. If you'd rather own the system yourself, we also offer standalone build-outs that can be done in as little as one to two months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does pricing work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing is tailored to your specific setup. The two biggest factors are volume — how many emails you want to send and how aggressively you want to scale — and the complexity of the motion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does onboarding take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Onboarding typically takes 5–7 business days. We'll set up your infrastructure, build your prospect lists, and craft your messaging — so campaigns launch quickly and correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the system handle for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Everything from data sourcing and list building to copywriting, sending infrastructure, deliverability management, and campaign optimization. You focus on closing — we handle the rest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure lead quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use AI-driven data extraction combined with manual verification to build hyper-targeted prospect lists. Every lead is triple-verified before outreach begins to keep bounce rates below 1%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need my own tools or software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We provide all the tools, infrastructure, and software needed to run your campaigns. You don't need to purchase or manage any additional platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I'm already doing outbound in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many of our clients run AutoUp alongside their internal teams. We complement your existing efforts by adding dedicated infrastructure, proven copy frameworks, and scalable volume you can't achieve alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will I see results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most clients see their first positive replies within the first two weeks of campaign launch. Meaningful pipeline impact — booked meetings and qualified opportunities — typically ramps within 30 days."
+          }
+        }
+      ]
+    };
+
+    const schemas = [orgSchema, siteSchema, serviceSchema, faqSchema];
+    const scriptElements: HTMLScriptElement[] = [];
+
+    schemas.forEach((schema) => {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+      scriptElements.push(script);
+    });
+
+    return () => {
+      scriptElements.forEach((el) => el.remove());
+    };
+  }, []);
+```
+
+---
+
+## 3. `client/src/hooks/usePageMeta.ts` — New File
+
+Create a reusable hook for setting page-level meta tags dynamically. This will be used by the homepage and eventually by blog pages too.
+
+```tsx
+import { useEffect } from "react";
+
+interface PageMeta {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+}
+
+export function usePageMeta({ title, description, canonical, ogImage, ogType = "website" }: PageMeta) {
+  useEffect(() => {
+    // Title
+    document.title = title;
+
+    // Helper to set or create meta tags
+    const setMeta = (attr: string, key: string, content: string) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+
+    setMeta("name", "description", description);
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:type", ogType);
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
+
+    if (canonical) {
+      setMeta("property", "og:url", canonical);
+      setMeta("name", "twitter:url", canonical);
+      let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+      if (!link) {
+        link = document.createElement("link");
+        link.rel = "canonical";
+        document.head.appendChild(link);
+      }
+      link.href = canonical;
+    }
+
+    if (ogImage) {
+      setMeta("property", "og:image", ogImage);
+      setMeta("name", "twitter:image", ogImage);
+    }
+  }, [title, description, canonical, ogImage, ogType]);
+}
+```
+
+Then in `Home.tsx`, also add at the top of the component:
+```tsx
+usePageMeta({
+  title: "AutoUp — Cold Email Outbound System | 10,000+ Positive Replies Every Month",
+  description: "AutoUp builds done-for-you cold email outbound systems that generate 10,000+ positive replies every month. AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure trusted by 200+ companies.",
+  canonical: "https://autoup.io/",
+  ogImage: "https://autoup.io/og-image.png",
+});
+```
+
+---
+
+## 4. Semantic HTML Improvements in Sections
+
+These are tag-level changes that don't affect any visual rendering.
+
+### `Hero.tsx`
+The stats bar at the bottom should use `<dl>` (description list) for semantic meaning. Replace the stats `.map()` block:
+
+Change the outer wrapper from:
+```tsx
+<div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[#eef1f5] pt-10">
+```
+to:
+```tsx
+<dl className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[#eef1f5] pt-10">
+```
+
+Change each stat item from:
+```tsx
+<div key={i} className="flex flex-col items-center gap-1">
+  <div className="text-[40px] md:text-[48px] font-bold text-[#1e293b] tracking-tight leading-none">{stat.value}</div>
+  <div className="text-[14px] md:text-[15px] font-medium text-[#8a9bb0] uppercase tracking-wider">{stat.label}</div>
+</div>
+```
+to:
+```tsx
+<div key={i} className="flex flex-col items-center gap-1">
+  <dt className="order-2 text-[14px] md:text-[15px] font-medium text-[#8a9bb0] uppercase tracking-wider">{stat.label}</dt>
+  <dd className="order-1 text-[40px] md:text-[48px] font-bold text-[#1e293b] tracking-tight leading-none">{stat.value}</dd>
+</div>
+```
+
+And close with `</dl>` instead of `</div>`.
+
+### `Testimonials.tsx`
+Each testimonial quote is already in a `<blockquote>` — good. But add a `cite` attribute to each. Inside the blockquote tag, add:
+```tsx
+<blockquote cite="https://autoup.io/#testimonials" className="...">
+```
+
+### `Footer.tsx`
+Add a `role="contentinfo"` to the footer (it already uses a `<footer>` tag, which is correct, but explicitly marking it reinforces semantics):
+```tsx
+<footer className="..." data-theme="dark" role="contentinfo">
+```
+
+### `Navigation.tsx`
+Add `aria-label` to the nav element:
+```tsx
+<nav aria-label="Main navigation" className={cn(...)}>
+```
+
+---
+
+## 5. `client/public/robots.txt` — New File
+
+Create this file at `client/public/robots.txt`:
+
+```
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://autoup.io/sitemap.xml
+```
+
+---
+
+## 6. Server-Side Sitemap — `server/routes.ts`
+
+Add a sitemap endpoint in `server/routes.ts`. Add this inside the `registerRoutes` function, before the `return httpServer;` line:
+
+```ts
+app.get("/sitemap.xml", (_req, res) => {
+  const baseUrl = "https://autoup.io";
+  const today = new Date().toISOString().split("T")[0];
+
+  const blogSlugs = [
+    "cold-email-deliverability-2025",
+    "b2b-lead-generation-ai",
+    "outbound-vs-inbound-sales",
+    "linkedin-outreach-playbook",
+    "email-copywriting-frameworks",
+    "scaling-outreach-without-spam",
+  ];
+
+  const urls = [
+    { loc: `${baseUrl}/`, changefreq: "weekly", priority: "1.0" },
+    { loc: `${baseUrl}/blog`, changefreq: "weekly", priority: "0.8" },
+    ...blogSlugs.map((slug) => ({
+      loc: `${baseUrl}/blog/${slug}`,
+      changefreq: "monthly" as const,
+      priority: "0.7",
+    })),
+  ];
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (u) => `  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>
+  </url>`
+  )
+  .join("\n")}
+</urlset>`;
+
+  res.header("Content-Type", "application/xml");
+  res.send(xml);
+});
+```
+
+---
+
+## 7. Image Alt Text Improvements
+
+### `Press.tsx`
+The press logos use generic alt text like `alt="NYT"`. Update to be more descriptive:
+```ts
+const logos = [
+  { name: "The New York Times", src: "/images/press/nyt.png", ... },
+  { name: "The Wall Street Journal", src: "/images/press/wsj.png", ... },
+  { name: "TechCrunch", src: tcLogoPath, ... },
+  { name: "Forbes", src: "/images/press/forbes.png", ... },
+  { name: "Bloomberg", src: "/images/press/bloomberg.png", ... },
+  { name: "Harvard Business Review", src: "/images/press/hbr.png", ... },
+  { name: "The Washington Post", src: "/images/press/wapo.png", ... },
+  { name: "Entrepreneur", src: "/images/press/entrepreneur.png", ... },
+  { name: "Inc. 5000", src: "/images/press/inc5000.png", ... },
+];
+```
+
+And update the alt attribute in the img tag to say:
+```tsx
+alt={`${logo.name} — AutoUp client press feature`}
+```
+
+### `FeaturedResults.tsx`
+The Instantly logo alt is just "Instantly" — update to:
+```tsx
+alt="Instantly — AutoUp certified cold email partner"
+```
+
+### Hero section avatar images
+The avatar images have `alt=""` — since these are decorative, that's actually correct per accessibility standards. Leave as-is.
+
+---
+
+## Summary of Changes
+
+All of these are invisible to users:
+
+1. **Meta tags** — title, description, OG, Twitter Card, canonical URL
+2. **Font payload** — cut from 25+ families to 2 (massive page speed improvement)
+3. **Structured data** — Organization, WebSite, Service, and FAQPage schemas
+4. **`usePageMeta` hook** — for dynamic meta tag management across pages
+5. **Semantic HTML** — `<dl>/<dt>/<dd>` for stats, `aria-label` on nav, `cite` on blockquotes
+6. **`robots.txt`** — proper crawl directives
+7. **`sitemap.xml`** — server-generated, covers all pages
+8. **Image alt text** — descriptive press logo alts for image search
+9. **Accessibility fix** — `maximum-scale=5` instead of `1`
+
+None of these change any colors, fonts, spacing, layout, animations, or visual behavior.

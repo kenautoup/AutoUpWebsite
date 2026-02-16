@@ -63,18 +63,18 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.4}>
-          <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[#eef1f5] pt-10">
+          <dl className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[#eef1f5] pt-10">
             {[
               { label: "Emails Sent / Month", value: "5M+" },
               { label: "Positive Replies / Month", value: "10K+" },
               { label: "Fortune 500 Meetings Booked", value: "250+" },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
-                <div className="text-[40px] md:text-[48px] font-bold text-[#1e293b] tracking-tight leading-none">{stat.value}</div>
-                <div className="text-[14px] md:text-[15px] font-medium text-[#8a9bb0] uppercase tracking-wider">{stat.label}</div>
+                <dt className="order-2 text-[14px] md:text-[15px] font-medium text-[#8a9bb0] uppercase tracking-wider">{stat.label}</dt>
+                <dd className="order-1 text-[40px] md:text-[48px] font-bold text-[#1e293b] tracking-tight leading-none">{stat.value}</dd>
               </div>
             ))}
-          </div>
+          </dl>
         </Reveal>
       </div>
     </section>

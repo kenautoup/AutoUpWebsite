@@ -121,7 +121,7 @@ export function FeaturedResults() {
               }}
             />
             <div className="relative z-10 flex flex-col items-center">
-              <img src={instantlyLogo} alt="Instantly" className="h-16 md:h-20 w-auto mb-10" />
+              <img src={instantlyLogo} alt="Instantly — AutoUp certified cold email partner" className="h-16 md:h-20 w-auto mb-10" />
               <h3 className="text-[28px] md:text-[34px] lg:text-[36px] font-bold text-white font-sans mb-10 max-w-3xl leading-snug">
                 The world's #1 cold email platform chose us to run their outbound.
               </h3>

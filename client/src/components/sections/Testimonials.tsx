@@ -193,7 +193,7 @@ export function Testimonials() {
                   <Star key={j} className="w-4 h-4 fill-teal" />
                 ))}
               </div>
-              <blockquote className="text-[#64748b] leading-[1.8] mb-8 text-[18px]">
+              <blockquote cite="https://autoup.io/#testimonials" className="text-[#64748b] leading-[1.8] mb-8 text-[18px]">
                 "{t.quote}"
               </blockquote>
             </div>
