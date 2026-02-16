@@ -3,6 +3,14 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
 import { z } from "zod";
+import { createClient } from "@sanity/client";
+
+const sanityServer = createClient({
+  projectId: process.env.SANITY_PROJECT_ID || "YOUR_PROJECT_ID",
+  dataset: "production",
+  apiVersion: "2024-01-01",
+  useCdn: true,
+});
 
 export async function registerRoutes(
   httpServer: Server,
@@ -22,18 +30,16 @@ export async function registerRoutes(
     }
   });
 
-  app.get("/sitemap.xml", (_req, res) => {
+  app.get("/sitemap.xml", async (_req, res) => {
     const baseUrl = "https://autoup.io";
     const today = new Date().toISOString().split("T")[0];
 
-    const blogSlugs = [
-      "cold-email-deliverability-2025",
-      "b2b-lead-generation-ai",
-      "outbound-vs-inbound-sales",
-      "linkedin-outreach-playbook",
-      "email-copywriting-frameworks",
-      "scaling-outreach-without-spam",
-    ];
+    let blogSlugs: string[] = [];
+    try {
+      blogSlugs = await sanityServer.fetch(`*[_type == "post"].slug.current`);
+    } catch (err) {
+      console.error("Failed to fetch blog slugs for sitemap:", err);
+    }
 
     const urls = [
       { loc: `${baseUrl}/`, changefreq: "weekly", priority: "1.0" },
