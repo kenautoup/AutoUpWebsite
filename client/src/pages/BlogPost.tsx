@@ -198,7 +198,9 @@ export default function BlogPost() {
             </div>
           </Reveal>
 
-          <div className="my-12">
+          <hr className="border-0 border-t border-[#e0e0e0] mt-[80px] mb-[40px]" />
+
+          <div className="mb-[80px]">
             <BlogCTA />
           </div>
 
