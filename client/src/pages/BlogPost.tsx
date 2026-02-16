@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "wouter";
-import { ArrowLeft, ArrowRight, ArrowUpRight, Clock, User, Calendar } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, User, Calendar } from "lucide-react";
 import { PortableText } from "@portabletext/react";
 import { Reveal } from "@/components/ui/reveal";
 import { Navigation } from "@/components/sections/Navigation";
@@ -8,6 +8,7 @@ import { Footer } from "@/components/sections/Footer";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { getPostBySlug, getAdjacentPosts, type SanityPost } from "@/lib/sanityQueries";
 import { urlFor } from "@/lib/sanity";
+import { BlogCTA } from "@/components/BlogCTA";
 
 const portableTextComponents = {
   block: {
@@ -197,21 +198,9 @@ export default function BlogPost() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.3}>
-            <div className="mt-16 p-8 bg-gray-50 rounded-lg text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 font-sans">Ready to scale your outreach?</h3>
-              <p className="text-gray-500 mb-6">Book a free strategy call and see how AutoUp can build your pipeline.</p>
-              <a
-                href="https://calendly.com/ken-autoup/autoup-introduction"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#4580F7] hover:bg-[#5090FF] text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 ease-out shadow-[0_2px_10px_rgba(69,128,247,0.2)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
-                data-testid="link-post-cta"
-              >
-                Book Intro Call <ArrowUpRight className="w-4 h-4" />
-              </a>
-            </div>
-          </Reveal>
+          <div className="my-12">
+            <BlogCTA />
+          </div>
 
           <div className="mt-12 flex items-center justify-between gap-4 pt-8 border-t border-gray-100">
             {adjacent.prev ? (

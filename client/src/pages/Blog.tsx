@@ -6,6 +6,7 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Footer } from "@/components/sections/Footer";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { getAllPosts, type SanityPost } from "@/lib/sanityQueries";
+import { BlogCTA } from "@/components/BlogCTA";
 
 const defaultCategoryColors: Record<string, string> = {
   "Email Strategy": "bg-blue-50 text-blue-700",
@@ -77,41 +78,85 @@ export default function Blog() {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post, i) => (
-                <Reveal key={post._id} delay={i * 0.05}>
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="group flex flex-col h-full bg-white rounded-lg border border-gray-100 overflow-visible hover-elevate transition-all"
-                    data-testid={`blog-card-${post.slug}`}
-                  >
-                    <div className="p-6 flex flex-col flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${post.categoryColor || defaultCategoryColors[post.category] || "bg-gray-50 text-gray-700"}`}>
-                          {post.category}
-                        </span>
-                        <span className="text-xs text-gray-400 flex items-center gap-1">
-                          <Clock className="w-3 h-3" /> {post.readTime}
-                        </span>
-                      </div>
-                      <h2 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#4580F7] transition-colors leading-snug">
-                        {post.title}
-                      </h2>
-                      <p className="text-sm text-gray-500 mb-4 flex-1 leading-relaxed">
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between gap-2 flex-wrap pt-4 border-t border-gray-50">
-                        <div className="flex items-center gap-2 text-xs text-gray-400">
-                          <User className="w-3 h-3" />
-                          {post.author}
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {posts.slice(0, 3).map((post, i) => (
+                  <Reveal key={post._id} delay={i * 0.05}>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="group flex flex-col h-full bg-white rounded-lg border border-gray-100 overflow-visible hover-elevate transition-all"
+                      data-testid={`blog-card-${post.slug}`}
+                    >
+                      <div className="p-6 flex flex-col flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${post.categoryColor || defaultCategoryColors[post.category] || "bg-gray-50 text-gray-700"}`}>
+                            {post.category}
+                          </span>
+                          <span className="text-xs text-gray-400 flex items-center gap-1">
+                            <Clock className="w-3 h-3" /> {post.readTime}
+                          </span>
                         </div>
-                        <span className="text-xs text-gray-400">{formatDate(post.publishedAt)}</span>
+                        <h2 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#4580F7] transition-colors leading-snug">
+                          {post.title}
+                        </h2>
+                        <p className="text-sm text-gray-500 mb-4 flex-1 leading-relaxed">
+                          {post.excerpt}
+                        </p>
+                        <div className="flex items-center justify-between gap-2 flex-wrap pt-4 border-t border-gray-50">
+                          <div className="flex items-center gap-2 text-xs text-gray-400">
+                            <User className="w-3 h-3" />
+                            {post.author}
+                          </div>
+                          <span className="text-xs text-gray-400">{formatDate(post.publishedAt)}</span>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                </Reveal>
-              ))}
-            </div>
+                    </Link>
+                  </Reveal>
+                ))}
+              </div>
+
+              <div className="my-12">
+                <BlogCTA />
+              </div>
+
+              {posts.length > 3 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {posts.slice(3).map((post, i) => (
+                    <Reveal key={post._id} delay={i * 0.05}>
+                      <Link
+                        href={`/blog/${post.slug}`}
+                        className="group flex flex-col h-full bg-white rounded-lg border border-gray-100 overflow-visible hover-elevate transition-all"
+                        data-testid={`blog-card-${post.slug}`}
+                      >
+                        <div className="p-6 flex flex-col flex-1">
+                          <div className="flex items-center gap-3 mb-3">
+                            <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${post.categoryColor || defaultCategoryColors[post.category] || "bg-gray-50 text-gray-700"}`}>
+                              {post.category}
+                            </span>
+                            <span className="text-xs text-gray-400 flex items-center gap-1">
+                              <Clock className="w-3 h-3" /> {post.readTime}
+                            </span>
+                          </div>
+                          <h2 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#4580F7] transition-colors leading-snug">
+                            {post.title}
+                          </h2>
+                          <p className="text-sm text-gray-500 mb-4 flex-1 leading-relaxed">
+                            {post.excerpt}
+                          </p>
+                          <div className="flex items-center justify-between gap-2 flex-wrap pt-4 border-t border-gray-50">
+                            <div className="flex items-center gap-2 text-xs text-gray-400">
+                              <User className="w-3 h-3" />
+                              {post.author}
+                            </div>
+                            <span className="text-xs text-gray-400">{formatDate(post.publishedAt)}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    </Reveal>
+                  ))}
+                </div>
+              )}
+            </>
           )}
 
           <div className="text-center mt-20 mb-8">

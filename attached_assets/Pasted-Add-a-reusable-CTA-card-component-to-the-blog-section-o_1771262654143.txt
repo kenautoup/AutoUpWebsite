@@ -1,0 +1,40 @@
+Add a reusable CTA card component to the blog section of this website. Use the existing tech stack and styling conventions already in the project.
+Component Name: BlogCTA
+Design specs:
+
+Rounded card (border-radius: 16px) with a soft gradient background going from light blue-green on the left to light lavender on the right (approximate colors: #e8f4f8 → #e0dff0)
+Subtle drop shadow
+All content centered
+Max-width ~900px, centered in parent container
+Generous internal padding (~60px vertical, ~40px horizontal)
+
+Content top to bottom:
+
+Headline — Large, bold, serif italic font. Two lines:
+
+Line 1: "You Don't Need More Outbound." (dark, near-black)
+Line 2: "You Need More " in dark + "Positive Replies." in teal/cyan (#00CED1)
+
+
+Subtext — Smaller, gray, regular weight: "We've sent 35M+ cold emails last year. Instantly.ai Certified Experts. Clients on all continents. Let's talk about outbound."
+Two buttons side by side (stack vertically on mobile):
+
+Primary: "Book Intro Call →" — background #4A5FC1, white text, rounded, links to /book-call
+Secondary: "See Client Results" — white background, dark text, subtle border, rounded, links to /case-studies
+
+
+Social proof row — 5 small circular avatar images overlapping slightly, followed by text "Trusted by 200+ companies"
+
+Where to place it:
+
+Blog listing page: Insert the BlogCTA component between the 3rd and 4th post in the feed. If there are fewer than 4 posts, put it at the end.
+Individual blog post pages: Insert the BlogCTA component at the bottom of the article body, after the last paragraph but before any related posts, comments, or footer. Add ~48px vertical margin above and below.
+
+Requirements:
+
+Build it as a single reusable component that gets imported in both locations
+Make the headline text, subtext, and button URLs configurable via props with sensible defaults
+For the avatars, create 5 placeholder circular images (use colored circles with initials or stock placeholder images if no real avatars are available)
+Fully responsive — buttons stack on mobile, font sizes scale down, padding reduces on small screens
+Match the font families and general design language already used in this project. For the headline specifically, use a serif italic font — import Playfair Display from Google Fonts if no serif font is already in the project
+Do not break any existing pages or layouts
