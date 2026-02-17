@@ -143,7 +143,6 @@ export function FeaturedResults() {
             <CaseStudyCard
               metric="7,500+"
               metricLabel="Positive Replies / Month"
-              timeframe="Achieved in 6 months"
               company="Diverse"
               industry="Inc. 5000 - #128"
               quote="Working with AutoUp transformed our outbound — the volume and quality of replies is unlike anything we've seen."
@@ -160,7 +159,6 @@ export function FeaturedResults() {
             <CaseStudyCard
               metric="1,000+"
               metricLabel="Positive Replies / Month"
-              timeframe="Achieved in 90 days"
               company="Reggora"
               industry="Series B - $60M Raised"
               quote="AutoUp built the entire outbound engine from scratch. The results speak for themselves."
