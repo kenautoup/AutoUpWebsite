@@ -5,7 +5,7 @@ import { X, Check } from "lucide-react";
 export function WhyItWorks() {
   const oldWay = [
     "Bought lists from ZoomInfo and Apollo",
-    "Contrived AI-written copy",
+    "Contrived, AI-generated copy",
     "Shared sending infrastructure",
     "Flagged as promotional, lands in spam",
     "Same prospects your competitors are emailing",
