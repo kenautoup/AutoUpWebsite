@@ -21,7 +21,7 @@ export function Hero() {
 
         <Reveal delay={0.2}>
           <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-[540px] mx-auto mb-8 leading-relaxed">
-            Custom data. Golden copy. Proprietary infrastructure. An outbound engine that fills your calendar on autopilot.
+            Custom data. Golden copy. Proprietary infrastructure. The outbound engine that fills your calendar on autopilot.
           </p>
         </Reveal>
 
