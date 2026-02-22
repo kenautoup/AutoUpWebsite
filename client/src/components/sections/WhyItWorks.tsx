@@ -13,7 +13,7 @@ export function WhyItWorks() {
 
   const autoUpWay = [
     "AI-built databases exclusive to each client",
-    "Every sequence written by strategists who've sent millions of emails",
+    "Battle-tested sequences from strategists with millions sent",
     "Proprietary infrastructure, warmed and scaled in real time",
     "Hits primary inbox consistently",
     "Fresh contacts your competitors can't access",
