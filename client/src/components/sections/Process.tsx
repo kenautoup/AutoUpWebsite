@@ -39,7 +39,7 @@ export function Process() {
         {[
           { val: "5M+", label: "Emails Sent / Month" },
           { val: "10K+", label: "Positive Replies / Month" },
-          { val: "250+", label: "Fortune 500 Meetings Booked" },
+          { val: "250+", label: "Fortune 500 Companies Booked" },
         ].map((stat, i) => (
           <Reveal key={i} delay={0.2 + (i * 0.1)} className="bg-white p-8 md:p-10 rounded-2xl border border-[#eef1f5] text-center">
             <div className="text-[48px] md:text-[58px] font-bold text-[#1e293b] mb-2 leading-none">{stat.val}</div>
