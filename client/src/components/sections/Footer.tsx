@@ -10,9 +10,9 @@ export function Footer() {
         </Link>
         
         <div className="flex items-center gap-6">
-          <a href="https://autoup.io/terms-privacy/" className="text-sm md:text-[14px] text-gray-500 hover:text-gray-300 transition-colors" data-testid="link-terms">
+          <Link href="/terms" className="text-sm md:text-[14px] text-gray-500 hover:text-gray-300 transition-colors" data-testid="link-terms">
             Terms & Privacy
-          </a>
+          </Link>
           <a 
             href="https://calendly.com/ken-autoup/autoup-introduction" 
             target="_blank" 
