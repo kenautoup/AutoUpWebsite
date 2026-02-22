@@ -179,7 +179,7 @@ export default function BlogPost() {
         <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <Reveal>
             <div className="mb-8">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight font-sans" data-testid="text-post-title">
+              <h1 className="font-bold text-gray-900 mb-6 leading-tight font-sans" style={{ fontSize: '38px' }} data-testid="text-post-title">
                 {post.title}
               </h1>
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-8">
