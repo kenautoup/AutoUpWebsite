@@ -132,7 +132,7 @@ export function FeaturedResults() {
                 className="inline-flex items-center gap-2 text-teal font-bold text-base hover:gap-3 transition-all"
                 data-testid="link-instantly-story"
               >
-                View the full story on LinkedIn <ArrowRight className="w-4 h-4" />
+                View the breakdown on LinkedIn <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>
