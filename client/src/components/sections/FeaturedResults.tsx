@@ -99,7 +99,7 @@ export function FeaturedResults() {
         <Reveal>
           <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">Featured Results</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-sans text-white">
-            Proof That <em className="text-teal italic">It Works</em>
+            The Proof Is In <em className="text-teal italic">The Pipeline</em>
           </h2>
           <p className="text-[20px] text-white/50 leading-relaxed">
             Real campaigns, real numbers, real outcomes.
