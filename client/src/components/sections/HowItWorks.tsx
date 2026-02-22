@@ -13,9 +13,9 @@ export function HowItWorks() {
   ];
 
   const autoUpWay = [
-    "AI-built databases exclusive to each client",
-    "Battle-tested sequences from strategists with millions sent",
-    "Proprietary infrastructure, warmed and scaled in real time",
+    "AI-built databases, exclusive to you",
+    "Battle-tested sequences, millions sent",
+    "Proprietary infrastructure, warmed in real time",
     "Hits primary inbox consistently",
     "Fresh contacts your competitors can't access",
   ];
