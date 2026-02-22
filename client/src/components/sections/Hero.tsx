@@ -21,7 +21,7 @@ export function Hero() {
 
         <Reveal delay={0.2}>
           <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-[540px] mx-auto mb-8 leading-relaxed">
-            AI-sourced data, reply-optimized sequences, and proprietary sending infrastructure — engineered into one outbound system that fills your pipeline on autopilot.
+            Custom data. Golden copy. Proprietary infrastructure. One system that fills your calendar on autopilot.
           </p>
         </Reveal>
 
