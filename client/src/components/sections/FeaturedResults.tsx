@@ -157,7 +157,7 @@ export function FeaturedResults() {
 
           <Reveal delay={0.2}>
             <CaseStudyCard
-              metric="1,000+"
+              metric="2,000+"
               metricLabel="Positive Replies / Month"
               company="Reggora"
               industry="Series B - $60M Raised"
