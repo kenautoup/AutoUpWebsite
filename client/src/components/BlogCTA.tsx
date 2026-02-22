@@ -17,7 +17,7 @@ interface BlogCTAProps {
 
 export function BlogCTA({
   headline = {
-    line1: "You Don't Need More Outbound.",
+    line1: "You Don't Need More Emails.",
     line2Dark: "You Need More ",
     line2Accent: "Positive Replies.",
   },

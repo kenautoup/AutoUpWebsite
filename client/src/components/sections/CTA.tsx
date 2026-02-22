@@ -15,7 +15,7 @@ export function CTA() {
             data-testid="card-cta"
           >
             <h2 className="font-serif italic text-3xl md:text-5xl lg:text-[56px] leading-[1.15] font-bold text-navy mb-6 mx-auto">
-              You Don't Need More Outbound.<br />
+              You Don't Need More Emails.<br />
               You Need More <span className="text-teal">Positive Replies.</span>
             </h2>
 
