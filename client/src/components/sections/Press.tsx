@@ -1,4 +1,5 @@
 import tcLogoPath from "@assets/techcrunchlogo_1771039496189.webp";
+import inc5000LogoPath from "@assets/Inc5000_Medallion_Black-adj_1771765584510.webp";
 
 export function Press() {
   const logos = [
@@ -10,7 +11,7 @@ export function Press() {
     { name: "Harvard Business Review", src: "/images/press/hbr.png", isSvg: false },
     { name: "The Washington Post", src: "/images/press/wapo.png", isSvg: false },
     { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "Inc. 5000", src: "/images/press/inc5000.png", isSvg: false, smaller: true },
+    { name: "Inc. 5000", src: inc5000LogoPath, isSvg: false, smaller: true },
   ];
 
   const doubled = [...logos, ...logos];
