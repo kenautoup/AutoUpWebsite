@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function HowItWorks() {
   const oldWay = [
-    "Bought lists from ZoomInfo and Apollo",
+    "Stale lists from ZoomInfo and Apollo",
     "Contrived, AI-generated copy",
     "Shared sending infrastructure",
     "Flagged as promotional, lands in spam",
