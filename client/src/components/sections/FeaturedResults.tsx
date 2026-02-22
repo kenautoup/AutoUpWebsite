@@ -145,7 +145,7 @@ export function FeaturedResults() {
               metricLabel="Positive Replies / Month"
               company="Diverse"
               industry="Inc. 5000 - #128"
-              quote="Working with AutoUp transformed our outbound — the volume and quality of replies is unlike anything we've seen."
+              quote="From their systems to how they think about cold email, AutoUp is doing things no one else is even considering. They're the gold standard."
               authorName="Tim Dean"
               authorTitle="Owner, Diverse"
               authorImage={timDeanPhoto}
