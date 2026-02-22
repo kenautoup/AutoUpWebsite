@@ -161,7 +161,7 @@ export function FeaturedResults() {
               metricLabel="Positive Replies / Month"
               company="Reggora"
               industry="Series B - $60M Raised"
-              quote="AutoUp built the entire outbound engine from scratch. The results speak for themselves."
+              quote="AutoUp did what it would have taken 15–20 SDRs to accomplish. The results have been consistently massive."
               authorName="Brian Zitin"
               authorTitle="CEO, Reggora"
               authorImage={brianZitinPhoto}
