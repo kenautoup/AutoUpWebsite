@@ -2,7 +2,7 @@ export function Press() {
   const logos = [
     { name: "The New York Times", src: "/images/press/nyt.png", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
     { name: "The Wall Street Journal", src: "/images/press/wsj.png", isSvg: false, smaller: true },
-    { name: "TechCrunch", src: "/images/press/techcrunch-transparent.png", isSvg: false, sizeClass: "h-[60px] md:h-[84px]" },
+    { name: "TechCrunch", src: "/images/press/techcrunch-transparent.png", isSvg: false, sizeClass: "h-[96px] md:h-[134px]" },
     { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
     { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
     { name: "Harvard Business Review", src: "/images/press/hbr.png", isSvg: false },
