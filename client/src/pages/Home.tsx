@@ -78,10 +78,10 @@ export default function Home() {
         },
         {
           "@type": "Question",
-          "name": "How long does onboarding take?",
+          "name": "How quickly can we start sending?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Onboarding typically takes 5–7 business days. We'll set up your infrastructure, build your prospect lists, and craft your messaging — so campaigns launch quickly and correctly."
+            "text": "Most clients are live within 1–4 weeks, depending on the complexity of your targeting, infrastructure requirements, and volume goals."
           }
         },
         {
