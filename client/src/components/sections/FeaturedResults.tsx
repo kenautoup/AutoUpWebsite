@@ -161,7 +161,7 @@ export function FeaturedResults() {
               metricLabel="Positive Replies / Month"
               company="Reggora"
               industry="Series B - $60M Raised"
-              quote="AutoUp did what it would have taken 15–20 SDRs to accomplish. The results have been consistently massive."
+              quote="I can't recommend AutoUp enough. They did alone what it would have taken 15–20 SDRs to accomplish. The results have been consistently massive."
               authorName="Brian Zitin"
               authorTitle="CEO, Reggora"
               authorImage={brianZitinPhoto}
