@@ -112,7 +112,7 @@ export function HowItWorks() {
             <div className="relative">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-6 h-[2px] bg-[#00C9DB]" />
-                <div className="text-[13px] font-bold uppercase tracking-[2px] text-[#00C9DB]">The AutoUp System</div>
+                <div className="text-[13px] font-bold uppercase tracking-[2px] text-[#00C9DB]">The AutoUp Way</div>
               </div>
               <div className="space-y-5">
                 {autoUpWay.map((item, i) => (
