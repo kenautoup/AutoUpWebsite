@@ -25,15 +25,34 @@ export function Press() {
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#f7f8fa] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#f7f8fa] to-transparent z-10 pointer-events-none" />
         <div className="flex animate-scroll-left gap-24 w-max py-4 items-center">
-          {doubled.map((logo, i) => (
-            <img
-              key={`${logo.name}-${i}`}
-              src={logo.src}
-              alt={`${logo.name} — AutoUp client press feature`}
-              className={`${(logo as any).sizeClass ? (logo as any).sizeClass : (logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28"} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
-              data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
-            />
-          ))}
+          {doubled.map((logo, i) => {
+            const sizeClass = (logo as any).sizeClass;
+            const isBlend = sizeClass?.includes("mix-blend");
+            const sizeOnly = sizeClass?.replace(/mix-blend-\S+/, "").trim();
+            const heightClass = sizeOnly || ((logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28");
+
+            return isBlend ? (
+              <div
+                key={`${logo.name}-${i}`}
+                className={`${heightClass} flex-shrink-0 mix-blend-multiply opacity-30 hover:opacity-70 transition-opacity duration-300`}
+                data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
+              >
+                <img
+                  src={logo.src}
+                  alt={`${logo.name} — AutoUp client press feature`}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            ) : (
+              <img
+                key={`${logo.name}-${i}`}
+                src={logo.src}
+                alt={`${logo.name} — AutoUp client press feature`}
+                className={`${heightClass} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
+                data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
