@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How do you ensure lead quality?",
-    answer: "We use AI-driven data extraction combined with manual verification to build hyper-targeted prospect lists. Every lead is triple-verified before outreach begins to keep bounce rates below 1%.",
+    answer: "Every campaign starts with a deep dive into your ICP — we work closely with you to define exactly who you're targeting. From there, we double-validate every email address to protect deliverability and sender reputation. And before a single email goes out, you review and approve each lead list. That way, everyone's aligned on who's being contacted and why.",
   },
   {
     question: "Do I need my own tools or software?",
@@ -78,7 +78,7 @@ export function FAQ() {
                   />
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-200 ease-out ${isOpen ? "max-h-40 pb-5" : "max-h-0"}`}
+                  className={`overflow-hidden transition-all duration-200 ease-out ${isOpen ? "max-h-60 pb-5" : "max-h-0"}`}
                 >
                   <p className="text-[16px] text-[#64748b] leading-relaxed pr-10">
                     {faq.answer}
