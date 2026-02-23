@@ -25,6 +25,10 @@ const faqs = [
     answer: "Every campaign starts with a deep dive into your ICP — we work closely with you to define exactly who you're targeting. From there, we double-validate every email address to protect deliverability and sender reputation. And before a single email goes out, you review and approve each lead list. That way, everyone's aligned on who's being contacted and why.",
   },
   {
+    question: "Who owns the data?",
+    answer: "You do — always. Every lead list, every data point, it's yours. Clients regularly leverage their data across sales and marketing teams for retargeting, nurture campaigns, and beyond.",
+  },
+  {
     question: "Do I need my own tools or software?",
     answer: "No. We provide all the tools, infrastructure, and software needed to run your campaigns. You don't need to purchase or manage any additional platforms.",
   },
