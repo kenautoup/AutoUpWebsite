@@ -67,7 +67,7 @@ export function Hero() {
             {[
               { label: "Emails Sent / Month", value: "5M+" },
               { label: "Positive Replies / Month", value: "10K+" },
-              { label: "Fortune 500 Companies Booked", value: "250+" },
+              { label: "Fortune 500 Meetings", value: "250+" },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center gap-1 px-2">
                 <dt className="order-2 text-[14px] md:text-[15px] font-medium text-[#8a9bb0] uppercase tracking-wider text-center">{stat.label}</dt>
