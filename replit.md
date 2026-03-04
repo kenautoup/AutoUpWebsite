@@ -12,7 +12,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Frontend Architecture
 - **Framework**: React 18 with TypeScript, bundled by Vite
-- **Routing**: Wouter (lightweight client-side router) — currently just `/` (Home) and a 404 page
+- **Routing**: Wouter (lightweight client-side router) — `/` (Home), `/blog`, `/blog/:slug`, `/terms`, and 404 page. Blog, BlogPost, Terms, and NotFound pages are lazy-loaded via `React.lazy()` for code splitting
 - **Styling**: Tailwind CSS with CSS variables for theming. The design uses a dark navy/teal color scheme defined in `client/src/index.css` and extended in `tailwind.config.ts`
 - **UI Components**: shadcn/ui (new-york style) with Radix UI primitives — components live in `client/src/components/ui/`
 - **Animations**: Framer Motion for scroll-reveal animations via a custom `<Reveal>` component
@@ -55,7 +55,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Third-Party Services
 - **Calendly** — External scheduling links (hardcoded URLs pointing to `calendly.com/ken-autoup/autoup-introduction`)
-- **Google Fonts** — Inter and Playfair Display font families loaded via CDN
+- **Fonts** — Inter and Playfair Display self-hosted as woff2 files in `client/public/fonts/`, preloaded in `<head>` with `font-display: swap`
 - **Sanity CMS** — Headless CMS powering the blog. Content managed at `https://autoup.sanity.studio`. Uses GROQ queries to fetch posts, categories, and authors. Requires `VITE_SANITY_PROJECT_ID` (frontend) and `SANITY_PROJECT_ID` (server-side sitemap) environment variables. Schemas defined in `sanity/schemas/` (post, category, author). Client config in `client/src/lib/sanity.ts`, queries in `client/src/lib/sanityQueries.ts`.
 
 ### Blog Architecture (Sanity-powered)

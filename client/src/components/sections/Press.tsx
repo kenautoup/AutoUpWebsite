@@ -1,14 +1,14 @@
 export function Press() {
   const logos = [
-    { name: "The New York Times", src: "/images/press/nyt.webp", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "The Wall Street Journal", src: "/images/press/wsj.webp", isSvg: false, smaller: true },
-    { name: "TechCrunch", src: "/images/press/techcrunch-transparent.webp", isSvg: false, sizeClass: "h-[67px] md:h-[94px]" },
-    { name: "Forbes", src: "/images/press/forbes.webp", isSvg: false },
-    { name: "Bloomberg", src: "/images/press/bloomberg.webp", isSvg: false },
-    { name: "Harvard Business Review", src: "/images/press/hbr.webp", isSvg: false },
-    { name: "The Washington Post", src: "/images/press/wapo.webp", isSvg: false },
-    { name: "Entrepreneur", src: "/images/press/entrepreneur.webp", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "Inc. 5000", src: "/images/press/inc5000-transparent.webp", isSvg: false, sizeClass: "h-[140px] md:h-[195px]" },
+    { name: "The New York Times", src: "/images/press/nyt.webp", sizeClass: "h-[108px] md:h-[151px]", width: 201, height: 151 },
+    { name: "The Wall Street Journal", src: "/images/press/wsj.webp", smaller: true, width: 129, height: 78 },
+    { name: "TechCrunch", src: "/images/press/techcrunch-transparent.webp", sizeClass: "h-[67px] md:h-[94px]", width: 169, height: 94 },
+    { name: "Forbes", src: "/images/press/forbes.webp", width: 163, height: 112 },
+    { name: "Bloomberg", src: "/images/press/bloomberg.webp", width: 163, height: 112 },
+    { name: "Harvard Business Review", src: "/images/press/hbr.webp", width: 83, height: 112 },
+    { name: "The Washington Post", src: "/images/press/wapo.webp", width: 163, height: 112 },
+    { name: "Entrepreneur", src: "/images/press/entrepreneur.webp", sizeClass: "h-[108px] md:h-[151px]", width: 201, height: 151 },
+    { name: "Inc. 5000", src: "/images/press/inc5000-transparent.webp", sizeClass: "h-[140px] md:h-[195px]", width: 244, height: 195 },
   ];
 
   const doubled = [...logos, ...logos];
@@ -23,13 +23,15 @@ export function Press() {
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#f7f8fa] to-transparent z-10 pointer-events-none" />
         <div className="flex animate-scroll-left gap-24 w-max py-4 items-center">
           {doubled.map((logo, i) => {
-            const heightClass = (logo as any).sizeClass || ((logo as any).smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28");
+            const heightClass = logo.sizeClass || (logo.smaller ? "h-14 md:h-[78px]" : "h-20 md:h-28");
 
             return (
               <img
                 key={`${logo.name}-${i}`}
                 src={logo.src}
                 alt={`${logo.name} — AutoUp client press feature`}
+                width={logo.width}
+                height={logo.height}
                 className={`${heightClass} w-auto object-contain opacity-30 hover:opacity-70 transition-opacity duration-300 flex-shrink-0`}
                 data-testid={`press-logo-${logo.name.toLowerCase()}-${i}`}
               />
