@@ -141,7 +141,7 @@ export function FeaturedResults() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Reveal delay={0.1}>
             <CaseStudyCard
-              metric="7,500+"
+              metric="8,500+"
               metricLabel="Positive Replies / Month"
               company="Diverse"
               industry="Inc. 5000 - #128"
@@ -157,7 +157,7 @@ export function FeaturedResults() {
 
           <Reveal delay={0.2}>
             <CaseStudyCard
-              metric="3,500+"
+              metric="2,000+"
               metricLabel="Positive Replies / Month"
               company="Reggora"
               industry="Series B - $60M Raised"
