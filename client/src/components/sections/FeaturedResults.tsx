@@ -145,7 +145,7 @@ export function FeaturedResults() {
               metricLabel="Positive Replies / Month"
               company="Diverse"
               industry="Inc. 5000 - #128"
-              quote="From their systems to how they think about cold email, AutoUp is doing things no one else is even considering. They're the gold standard."
+              quote="No one does it better. From their systems to how they think about cold email, AutoUp is doing things no one else is even considering. They're the gold standard."
               authorName="Tim Dean"
               authorTitle="Owner, Diverse"
               authorImage={timDeanPhoto}
