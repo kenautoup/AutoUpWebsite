@@ -41,9 +41,17 @@
     <!-- Critical above-the-fold CSS -->
     <style>
       @font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;src:url('/fonts/inter-latin.woff2') format('woff2')}
+      @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/playfair-normal-latin.woff2') format('woff2')}
       @font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 700;font-display:swap;src:url('/fonts/playfair-italic-latin.woff2') format('woff2')}
-      body{margin:0;font-family:'Inter',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#fff;color:#1e293b}
+      *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid}
+      body{margin:0;font-family:'Inter',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#fff;color:#1e293b;line-height:1.5}
       #root{min-height:100vh}
+      nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .3s}
+      .container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+      @media(min-width:768px){.container{padding-left:1.5rem;padding-right:1.5rem}}
+      @media(min-width:1280px){.container{max-width:1280px}}
+      h1,h2,h3,h4,h5,h6{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;font-weight:700;letter-spacing:-.025em}
+      em{font-family:'Playfair Display',Georgia,serif;font-style:italic;color:#00C9DB}
     </style>
   </head>
   <body>
