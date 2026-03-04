@@ -4,11 +4,8 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Press } from "@/components/sections/Press";
 import { HowItWorks } from "@/components/sections/HowItWorks";
-import { FeaturedResults } from "@/components/sections/FeaturedResults";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { FAQ } from "@/components/sections/FAQ";
-import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
+import { LazySection } from "@/components/LazySection";
 
 export default function Home() {
   usePageMeta({
@@ -150,10 +147,10 @@ export default function Home() {
         <Hero />
         <Press />
         <HowItWorks />
-        <FeaturedResults />
-        <Testimonials />
-        <FAQ />
-        <CTA />
+        <LazySection factory={() => import("@/components/sections/FeaturedResults")} exportName="FeaturedResults" minHeight="600px" />
+        <LazySection factory={() => import("@/components/sections/Testimonials")} exportName="Testimonials" minHeight="500px" />
+        <LazySection factory={() => import("@/components/sections/FAQ")} exportName="FAQ" minHeight="400px" />
+        <LazySection factory={() => import("@/components/sections/CTA")} exportName="CTA" minHeight="300px" />
       </main>
       <Footer />
     </div>

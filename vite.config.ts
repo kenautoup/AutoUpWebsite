@@ -48,7 +48,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor-react': ['react', 'react-dom'],
-          'vendor-ui': ['framer-motion', '@radix-ui/react-tooltip', '@radix-ui/react-toast'],
+          'vendor-motion': ['framer-motion'],
         },
       },
     },
