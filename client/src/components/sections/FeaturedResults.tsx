@@ -1,11 +1,11 @@
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ArrowRight, Star } from "lucide-react";
-import instantlyLogo from "@assets/instantly_1771035044332.png";
-import diverseLogoWhite from "@assets/diverse-full-logo-white_1771042214618.png";
-import reggoraLogoWhite from "@assets/reggora-logo-white_1771041955595.png";
-import timDeanPhoto from "@assets/tim_dean.jpg";
-import brianZitinPhoto from "@assets/lyons_1772622744739.jpeg";
+import instantlyLogo from "@assets/instantly_1771035044332.webp";
+import diverseLogoWhite from "@assets/diverse-full-logo-white_1771042214618.webp";
+import reggoraLogoWhite from "@assets/reggora-logo-white_1771041955595.webp";
+import timDeanPhoto from "@assets/tim_dean.webp";
+import brianZitinPhoto from "@assets/lyons_1772622744739.webp";
 
 function CaseStudyCard({
   metric,
@@ -77,7 +77,7 @@ function CaseStudyCard({
 
       <div className="flex items-center gap-3 mt-auto">
         {authorImage ? (
-          <img src={authorImage} alt={authorName} className="w-12 h-12 rounded-full object-cover object-top" />
+          <img src={authorImage} alt={authorName} width={48} height={48} className="w-12 h-12 rounded-full object-cover object-top" />
         ) : (
           <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-sm font-bold text-gray-400 font-sans">
             {authorName.split(" ").map((n) => n[0]).join("")}

@@ -74,8 +74,10 @@ export function BlogCTA({
             {[1, 2, 3, 4, 5].map((i) => (
               <img
                 key={i}
-                src={`/images/avatars/avatar${i}.jpg`}
+                src={`/images/avatars/avatar${i}.webp`}
                 alt=""
+                width={36}
+                height={36}
                 className="w-9 h-9 rounded-full border-2 border-white object-cover"
                 data-testid={`avatar-blog-cta-${i}`}
               />

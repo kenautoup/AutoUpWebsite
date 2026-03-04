@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
-import instantlyLogo from "@assets/instantlyexpert_1770991537677.png";
+import instantlyLogo from "@assets/instantlyexpert_1770991537677.webp";
 
 export function Hero() {
   return (
@@ -49,8 +49,10 @@ export function Hero() {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <img
                     key={i}
-                    src={`/images/avatars/avatar${i}.jpg`}
+                    src={`/images/avatars/avatar${i}.webp`}
                     alt=""
+                    width={42}
+                    height={42}
                     className="w-[42px] h-[42px] rounded-full border-2 border-white object-cover"
                   />
                 ))}

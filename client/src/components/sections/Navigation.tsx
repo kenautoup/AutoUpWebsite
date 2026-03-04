@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "wouter";
-import logoImg from "@assets/logo.png";
-import logoBlackImg from "@assets/autoupblack.png";
+import logoImg from "@assets/logo.webp";
+import logoBlackImg from "@assets/autoupblack.webp";
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);

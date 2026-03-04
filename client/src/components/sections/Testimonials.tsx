@@ -8,7 +8,7 @@ const testimonials = [
     stars: 5,
     quote: "With 40+ opportunities per month, it would have taken an entire sales team to drive the results AutoUp has. I'm formerly Google, Bolt and Gett — AutoUp is the most valuable weapon in our outreach.",
     initials: "RP",
-    photo: "/images/avatars/pleeth.png",
+    photo: "/images/avatars/pleeth.webp",
     name: "Rich Pleeth",
     role: "Co-founder & CEO, Finmile ($7M raised)",
   },
@@ -16,7 +16,7 @@ const testimonials = [
     stars: 5,
     quote: "Ken Volk is one of the smartest GTM experts I've worked with. AutoUp solved our deliverability issues and wrote creative copy that landed us dozens of meetings — including with the biggest players in our ICP.",
     initials: "PB",
-    photo: "/images/avatars/avatar1.jpg",
+    photo: "/images/avatars/avatar1.webp",
     name: "Patrick Burkholder",
     role: "VP of Sales, Rentable ($34M raised)",
   },
@@ -24,7 +24,7 @@ const testimonials = [
     stars: 5,
     quote: "We saw positive ROI in our first month. We've consistently received 30–40 positive email replies per week. Working with AutoUp has been one of the best marketing motions we've ever implemented.",
     initials: "RF",
-    photo: "/images/avatars/avatar3.jpg",
+    photo: "/images/avatars/avatar3.webp",
     name: "Randall Floyd",
     role: "Managing Editor, Mancomm",
   },
@@ -32,7 +32,7 @@ const testimonials = [
     stars: 5,
     quote: "AutoUp built custom scrapers to source thousands of valid emails for an ICP not in traditional directories. We average 20+ positive replies per week and have booked hundreds of qualified calls.",
     initials: "JC",
-    photo: "/images/avatars/avatar4.jpg",
+    photo: "/images/avatars/avatar4.webp",
     name: "Jill Chen",
     role: "Business Development Manager, Cladify",
   },
@@ -40,7 +40,7 @@ const testimonials = [
     stars: 5,
     quote: "AutoUp has been a game changer for our healthcare ecosystem. We gained more traction in a few months than ever before, and have had calls with multi-billion dollar companies.",
     initials: "DB",
-    photo: "/images/avatars/dougbertram.png",
+    photo: "/images/avatars/dougbertram.webp",
     name: "Doug Bertram",
     role: "CEO, Structural Elements ($11M raised)",
   },
@@ -48,7 +48,7 @@ const testimonials = [
     stars: 5,
     quote: "We've tried every outbound channel over 20 years selling into the Fortune 100. Hiring AutoUp has been the best business development play we've made in over a decade.",
     initials: "JS",
-    photo: "/images/avatars/avatar5.jpg",
+    photo: "/images/avatars/avatar5.webp",
     name: "John Strassel",
     role: "CEO, Zeriva",
   },
@@ -56,7 +56,7 @@ const testimonials = [
     stars: 5,
     quote: "We've won big deals we wouldn't have thought to look for if it weren't for AutoUp. The value has been massive. Hire them.",
     initials: "CM",
-    photo: "/images/avatars/corymoskowitz.png",
+    photo: "/images/avatars/corymoskowitz.webp",
     name: "Cory Moskowitz",
     role: "CEO & Founder, TransPromotion",
   },
@@ -64,7 +64,7 @@ const testimonials = [
     stars: 5,
     quote: "Kenny's growth initiatives allowed us to get in front of the right customers at the right time. He is master at understanding the customer's needs and for us this was priceless. We were able to close 68 more deals in a 6 week period directly from his outreach efforts.",
     initials: "DC",
-    photo: "/images/avatars/daniellacastro.jpeg",
+    photo: "/images/avatars/daniellacastro.webp",
     name: "Daniella Castro",
     role: "Director of Sales, Knock ($900M raised)",
   },
@@ -72,7 +72,7 @@ const testimonials = [
     stars: 5,
     quote: "AutoUp allowed us to rethink our business development structure entirely. They amplified our outreach in a cost-effective way we didn't know was possible.",
     initials: "GG",
-    photo: "/images/avatars/grantgordon.png",
+    photo: "/images/avatars/grantgordon.webp",
     name: "Grant Gordon",
     role: "CEO, Connected Healthcare",
   },
@@ -80,7 +80,7 @@ const testimonials = [
     stars: 5,
     quote: "Just before we were acquired, we had to turn away clients. If AutoUp could bring that level of success in the incredibly competitive web-mobile dev industry, it can work for anyone.",
     initials: "KG",
-    photo: "/images/avatars/kemaedeguzman.png",
+    photo: "/images/avatars/kemaedeguzman.webp",
     name: "Kemae de Guzman",
     role: "Project Manager, SourcePad (Acquired)",
   },
@@ -200,7 +200,7 @@ export function Testimonials() {
 
             <div className="flex items-center gap-4 mt-auto">
               {t.photo ? (
-                <img src={t.photo} alt={t.name} className="w-16 h-16 rounded-full object-cover flex-shrink-0" />
+                <img src={t.photo} alt={t.name} width={64} height={64} className="w-16 h-16 rounded-full object-cover flex-shrink-0" />
               ) : (
                 <div className="w-16 h-16 rounded-full bg-teal/10 flex items-center justify-center font-bold text-teal text-lg flex-shrink-0">
                   {t.initials}

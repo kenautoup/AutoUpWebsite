@@ -1,14 +1,14 @@
 export function Press() {
   const logos = [
-    { name: "The New York Times", src: "/images/press/nyt.png", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "The Wall Street Journal", src: "/images/press/wsj.png", isSvg: false, smaller: true },
-    { name: "TechCrunch", src: "/images/press/techcrunch-transparent.png", isSvg: false, sizeClass: "h-[67px] md:h-[94px]" },
-    { name: "Forbes", src: "/images/press/forbes.png", isSvg: false },
-    { name: "Bloomberg", src: "/images/press/bloomberg.png", isSvg: false },
-    { name: "Harvard Business Review", src: "/images/press/hbr.png", isSvg: false },
-    { name: "The Washington Post", src: "/images/press/wapo.png", isSvg: false },
-    { name: "Entrepreneur", src: "/images/press/entrepreneur.png", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
-    { name: "Inc. 5000", src: "/images/press/inc5000-transparent.png", isSvg: false, sizeClass: "h-[140px] md:h-[195px]" },
+    { name: "The New York Times", src: "/images/press/nyt.webp", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
+    { name: "The Wall Street Journal", src: "/images/press/wsj.webp", isSvg: false, smaller: true },
+    { name: "TechCrunch", src: "/images/press/techcrunch-transparent.webp", isSvg: false, sizeClass: "h-[67px] md:h-[94px]" },
+    { name: "Forbes", src: "/images/press/forbes.webp", isSvg: false },
+    { name: "Bloomberg", src: "/images/press/bloomberg.webp", isSvg: false },
+    { name: "Harvard Business Review", src: "/images/press/hbr.webp", isSvg: false },
+    { name: "The Washington Post", src: "/images/press/wapo.webp", isSvg: false },
+    { name: "Entrepreneur", src: "/images/press/entrepreneur.webp", isSvg: false, sizeClass: "h-[108px] md:h-[151px]" },
+    { name: "Inc. 5000", src: "/images/press/inc5000-transparent.webp", isSvg: false, sizeClass: "h-[140px] md:h-[195px]" },
   ];
 
   const doubled = [...logos, ...logos];
