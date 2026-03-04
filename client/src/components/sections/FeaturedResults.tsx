@@ -5,7 +5,7 @@ import instantlyLogo from "@assets/instantly_1771035044332.png";
 import diverseLogoWhite from "@assets/diverse-full-logo-white_1771042214618.png";
 import reggoraLogoWhite from "@assets/reggora-logo-white_1771041955595.png";
 import timDeanPhoto from "@assets/tim_dean.jpg";
-import brianZitinPhoto from "@assets/zitin_1771161758340.jpeg";
+import brianZitinPhoto from "@assets/lyons_1772622744739.jpeg";
 
 function CaseStudyCard({
   metric,
