@@ -3,10 +3,10 @@ import logoImg from "@assets/logo.webp";
 
 export function Footer() {
   return (
-    <footer className="bg-navy-deep border-t border-white/5 py-12" data-theme="dark" role="contentinfo">
+    <footer className="bg-navy-deep border-t border-white/5 py-12 min-h-[200px]" data-theme="dark" role="contentinfo">
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center gap-5">
         <Link href="/" className="group">
-          <img src={logoImg} alt="AutoUp" className="h-6 w-auto transition-transform group-hover:scale-105" />
+          <img src={logoImg} alt="AutoUp" width={158} height={24} className="h-6 w-auto transition-transform group-hover:scale-105" />
         </Link>
         
         <div className="flex items-center gap-6">

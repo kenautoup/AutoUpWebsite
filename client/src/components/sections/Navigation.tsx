@@ -75,6 +75,8 @@ export function Navigation() {
           <img
             src={isDark ? logoImg : logoBlackImg}
             alt="AutoUp"
+            width={158}
+            height={24}
             className="h-8 w-auto transition-all group-hover:scale-105"
           />
         </Link>
