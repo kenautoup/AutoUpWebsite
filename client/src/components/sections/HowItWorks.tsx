@@ -24,9 +24,8 @@ export function HowItWorks() {
     <Section id="how-it-works" className="bg-white">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <Reveal>
-          <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">The System</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#1e293b]">
-            10,000+ Positive Replies.<br /><em>Every Month.</em>
+            Built Different.<br /><em>On Purpose.</em>
           </h2>
           <p className="text-[20px] text-[#64748b] leading-relaxed">
             Custom data. Golden copy. Proprietary infrastructure. The outbound engine that fills your calendar on autopilot.
