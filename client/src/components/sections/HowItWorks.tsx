@@ -29,7 +29,7 @@ export function HowItWorks() {
             10,000+ Positive Replies.<br /><em>Every Month.</em>
           </h2>
           <p className="text-[20px] text-[#64748b] leading-relaxed">
-            Not opens. Not clicks. Positive replies from verified decision-makers — delivered to the primary inbox at scale.
+            Custom data. Golden copy. Proprietary infrastructure. The outbound engine that fills your calendar on autopilot.
           </p>
         </Reveal>
       </div>
