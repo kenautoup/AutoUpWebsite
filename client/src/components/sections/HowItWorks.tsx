@@ -24,6 +24,7 @@ export function HowItWorks() {
     <Section id="how-it-works" className="bg-white">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <Reveal>
+          <div className="text-teal font-bold uppercase tracking-widest text-sm mb-4">The System</div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#1e293b]">
             Built Different.<br /><em>On Purpose.</em>
           </h2>
