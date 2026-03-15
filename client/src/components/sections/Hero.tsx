@@ -14,7 +14,7 @@ export function Hero() {
 
         <Reveal delay={0.1}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1] font-sans text-[#1e293b]">
-            10,000+ Positive Replies.<br />
+            10,000+ Leads Generated.<br />
             <em className="text-teal">Every Month.</em>
           </h1>
         </Reveal>
