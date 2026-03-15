@@ -14,14 +14,14 @@ export function Hero() {
 
         <Reveal delay={0.1}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1] font-sans text-[#1e293b]">
-            We Build the Pipeline.<br />
-            <em className="text-teal">You Close the Deals.</em>
+            10,000+ Positive Replies.<br />
+            <em className="text-teal">Every Month.</em>
           </h1>
         </Reveal>
 
         <Reveal delay={0.2}>
           <p className="text-[20px] md:text-[22px] text-[#64748b] max-w-[540px] mx-auto mb-8 leading-relaxed">
-            Custom data. Golden copy. Proprietary infrastructure. The outbound engine that fills your calendar on autopilot.
+            Not opens. Not clicks. Positive replies from verified decision-makers — delivered to the primary inbox at scale.
           </p>
         </Reveal>
 
